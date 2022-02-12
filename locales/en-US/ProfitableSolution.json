@@ -1,0 +1,46 @@
+{
+    "profitable-title-bg-color": "Profitable",
+    "profitable-title": "Solution",
+    "profitable-paragraph-first": "We will help your business improve and maximize your call center performance & let your business thrive! ",
+    "profitable-paragraph-color-text": "ZIWO ",
+    "profitable-paragraph-second": "payment plan is fixable and smooth, companies can choose between monthly or yearly subscription fees.",
+
+
+    "profitable-card-business-title": "Cloud Business Phone System",
+    "profitable-card-business-price": "$30",
+    "profitable-card-business-button-title": "Get Started",
+    "profitable-card-business-experience": "Minimum of 3 users",
+    "profitable-card-business-description": "Ideal for non-Customer Facing Teams or Receptionists Desktop App",
+    "profitable-card-business-list-item-1": "Desktop App",
+    "profitable-card-business-list-item-2": "Cloud PBX",
+    "profitable-card-business-list-item-3": "Standard IVR (Interactive Voice Response)",
+    "profitable-card-business-list-item-4": "Free Standard DID Inbound Roaming Agent",
+
+
+    "profitable-card-contact-title": "Cloud Contact Center",
+    "profitable-card-contact-price": "$82",
+    "profitable-card-contact-short-description": "Ideal for Call Center",
+    "profitable-card-contact-brief-description": "VOICE-SMS-WhatsApp CRM Plugins API-Webhooks-Mobile SDK Web App & iOS App & Android App",
+    "profitable-card-contact-button-title": "Get Started",
+    "profitable-card-contact-list-item-1": "Cloud PBX",
+    "profitable-card-contact-list-item-2": "Customer IVR (Interactive Voice Response)",
+    "profitable-card-contact-list-item-3": "ACD (Automatic Call Distribution) Call Recordings",
+    "profitable-card-contact-list-item-4": "Call Whispering",
+    "profitable-card-contact-list-item-5": "Agent Status",
+    "profitable-card-contact-list-item-6": "Agent Attendance Time    Sentiment Analysis",
+    "profitable-card-contact-list-item-7": "WhatsApp Number (99$ per month)",
+
+
+    "profitable-card-enterprise-title": "Enterprise",
+    "profitable-card-enterprise-title-description": "100+",
+    "profitable-card-enterprise-short-title-description": "users",
+    "profitable-card-enterprise-short-description": "Additional Options to Meet your Complete Business Needs",
+    "profitable-card-enterprise-button-title": "Contact us",
+    "profitable-card-enterprise-list-item-1": "High Availability",
+    "profitable-card-enterprise-list-item-2": "Private or Public Cloud",
+    "profitable-card-enterprise-list-item-3": "Bring your own SIP trunk",
+    "profitable-card-enterprise-list-item-4": "Uptime financial warranty",
+    "profitable-card-enterprise-list-item-5": "Custom Data Retention Policy",
+    "profitable-card-enterprise-list-item-6": "Custom Integration",
+    "profitable-card-enterprise-list-item-7": "24/7 Support"
+}

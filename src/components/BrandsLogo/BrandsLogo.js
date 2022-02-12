@@ -1,0 +1,66 @@
+import Image from "next/image";
+
+const BrandsLogo = () => {
+  return (
+    <section>
+      <div className="flex justify-around items-center mt-10 bg-image bg-zinc-50">
+        <Image
+          src="/images/alsaif-gallery-logo.png"
+          width="87"
+          height="95"
+          alt="background image"
+        />
+        <Image
+          src="/images/khaleej-logo.png"
+          width="82"
+          height="78"
+          alt="background image"
+        />
+        <Image
+          src="/images/burgerizzr-logo.png"
+          width="96"
+          height="96"
+          alt="background image"
+        />
+        <Image
+          src="/images/bwareq-logo.png"
+          width="67"
+          height="67"
+          alt="background image"
+        />
+        <div className="hidden lg:inline-block">
+          <Image
+            src="/images/zension-logo.png"
+            width="175"
+            height="30"
+            alt="background image"
+          />
+        </div>
+        <div className="hidden lg:inline-block">
+          <Image
+            src="/images/sushishop-logo.png"
+            width="165"
+            height="76"
+            alt="background image"
+          />
+        </div>
+        <div className="hidden lg:inline-block">
+          <Image
+            src="/images/sitros-logo.png"
+            width="150"
+            height="50"
+            alt="background image"
+          />
+        </div>
+      </div>
+      <Image
+        src="/images/background-bottom-image.png"
+        width="1920"
+        height="109"
+        alt="background image"
+      />
+    </section>
+  );
+};
+
+export default BrandsLogo;
