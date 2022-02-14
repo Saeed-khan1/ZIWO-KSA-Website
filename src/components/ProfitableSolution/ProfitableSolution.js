@@ -46,51 +46,51 @@ const ProfitableSolution = () => {
         {text("profitable-paragraph-second")}
       </p>
 
-      <div class="flex items-center flex-wrap justify-center w-full mb-12">
+      <div className="flex items-center flex-wrap justify-center w-full mb-12">
         <label
-          for="toogleA"
-          class="flex items-center cursor-pointer md:w-1/2 w-full ml-7 mb-4 md:mb-0 md:ml-0 justify-center md:justify-end"
+          htmlFor="toogleA"
+          className="flex items-center cursor-pointer md:w-1/2 w-full ml-7 mb-4 md:mb-0 md:ml-0 justify-center md:justify-end"
         >
-          <p class={`${paragraphFontFamily} mr-3 text-gray-700 font-bold`}>
+          <p className={`${paragraphFontFamily} mr-3 text-gray-700 font-bold`}>
             {text("profitable-sbuscription-quaterly")}
           </p>
-          <div class="relative">
+          <div className="relative">
             <input
               id="toogleA"
               type="checkbox"
-              class="sr-only"
+              className="sr-only"
               onChange={handleCurrencyToggle}
             />
-            <div class="w-14 h-6 bg-primary rounded-full shadow-inner"></div>
-            <div class="dot absolute w-6 h-6 bg-white rounded-full shadow top-0 right-7 transition"></div>
+            <div className="w-14 h-6 bg-primary rounded-full shadow-inner"></div>
+            <div className="dot absolute w-6 h-6 bg-white rounded-full shadow top-0 right-7 transition"></div>
           </div>
           <p
-            class={`${paragraphFontFamily} ml-3 mr-10 text-gray-700 font-bold`}
+            className={`${paragraphFontFamily} ml-3 mr-10 text-gray-700 font-bold`}
           >
             {text("profitable-sbuscription-yearly")}
           </p>
         </label>
         <label
-          for="currencyToggle"
-          class="flex items-center cursor-pointer md:w-1/2 w-full justify-center md:justify-start mr-6 md:mr-0 border-0 md:border-l-2"
+          htmlFor="currencyToggle"
+          className="flex items-center cursor-pointer md:w-1/2 w-full justify-center md:justify-start mr-6 md:mr-0 border-0 md:border-l-2"
         >
           <p
-            class={`${paragraphFontFamily} mr-3 ml-10 text-gray-700 font-bold`}
+            className={`${paragraphFontFamily} mr-3 ml-10 text-gray-700 font-bold`}
           >
             {text("profitable-sbuscription-billing-type-dollar")}
           </p>
-          <div class="relative">
+          <div className="relative">
             <input
               id="currencyToggle"
               type="checkbox"
-              class="sr-only"
+              className="sr-only"
               value={true}
               onChange={handleCurrencyToggle}
             />
-            <div class="w-14 h-6 bg-primary rounded-full shadow-inner"></div>
-            <div class="dot absolute w-6 h-6 bg-white rounded-full shadow top-0 right-7 transition"></div>
+            <div className="w-14 h-6 bg-primary rounded-full shadow-inner"></div>
+            <div className="dot absolute w-6 h-6 bg-white rounded-full shadow top-0 right-7 transition"></div>
           </div>
-          <p class={`${paragraphFontFamily} ml-3 text-gray-700 font-bold`}>
+          <p className={`${paragraphFontFamily} ml-3 text-gray-700 font-bold`}>
             {text("profitable-sbuscription-billing-type-riyal")}
           </p>
         </label>

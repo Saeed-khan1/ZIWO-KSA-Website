@@ -41,7 +41,7 @@ const Benefits = () => {
       </section>
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-20 p-6 lg:px-20 md:mx-10 text-center">
         {/* ************** OMNICHANNEL ******************** */}
-        <div className={isArabicLanguage && "order-3"}>
+        <div className={classNames({ "order-3": isArabicLanguage })}>
           <Image
             src="/images/omnichannel.svg"
             width="175"
@@ -70,7 +70,7 @@ const Benefits = () => {
         </div>
 
         {/* ************** SUPPPORT ******************** */}
-        <div className={isArabicLanguage && "order-2"}>
+        <div className={classNames({ "order-2": isArabicLanguage })}>
           <Image
             src="/images/support.svg"
             width="175"
@@ -100,7 +100,7 @@ const Benefits = () => {
         </div>
 
         {/* ************** UNIQUE FEATURES ******************** */}
-        <div className={isArabicLanguage && "order-1"}>
+        <div className={classNames({ "order-1": isArabicLanguage })}>
           <Image
             src="/images/unique-feature.svg"
             width="175"

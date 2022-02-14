@@ -48,7 +48,9 @@ const CustomerReviews = () => {
               <span className="text-primary">4.7</span>/5
             </h3>
             <p dir="ltr" className={paragraphFontFamily}>
-              “<strong>{text("google-description-first")}</strong>{" "}
+              <span className="font-bold">
+                {text("google-description-first")}
+              </span>
               {text("google-description-second")}
             </p>
           </div>
@@ -64,7 +66,10 @@ const CustomerReviews = () => {
             </h3>
             <p className={`${paragraphFontFamily} px-3`} dir="ltr">
               {text("crowed-description-first")}
-              <strong>{text("crowed-description-second")}</strong>”
+              <span className="font-bold">
+                {text("crowed-description-second")}
+              </span>
+              ”
             </p>
           </div>
           <div className="w-full md:w-4/12 mb-16">
@@ -135,13 +140,11 @@ const CustomerReviews = () => {
             {text("customer-review-company-name")}
           </p>
           <p>
-            <p className={`${paragraphFontFamily} text-gray-500`}>
+            <span className={`${paragraphFontFamily} text-gray-500`}>
               {text("customer-review-company-representative-name")}
-            </p>{" "}
+            </span>{" "}
             <span className="font-normal">
-              <p>
-                {text("customer-review-company-representative-designation")}
-              </p>
+              {text("customer-review-company-representative-designation")}
             </span>
           </p>
         </div>
