@@ -121,7 +121,6 @@ const ProfitableSolution = () => {
           userSubscriptionType={text("user-subscription-type")}
           userBillingType={text("user-billing-type")}
           userSubscriptionType={text("user-subscription-type")}
-          userBillingType={text("user-billing-type")}
           briefDescription={text("profitable-card-contact-brief-description")}
           cardBackgroundColor="primary"
           listItemsArray={[
