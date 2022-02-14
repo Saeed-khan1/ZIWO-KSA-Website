@@ -7,9 +7,12 @@ import useTranslation from "next-translate/useTranslation";
 import setLanguage from "next-translate/setLanguage";
 
 import CustomButton from "../Common/CustomButton/CustomButton";
+import Common from "../../Hooks/Common";
 
 const Navbar = () => {
   const [showMobileMenu, setShowMobileMenu] = React.useState(true);
+
+  const { paragraphFontFamily } = Common();
 
   const { t: text } = useTranslation("Navbar");
   const router = useRouter();
@@ -50,28 +53,38 @@ const Navbar = () => {
             className={`hidden lg:flex items-center space-x-9 xl:space-x-14 ${swipContent} `}
           >
             <Link href="#why-ziwo">
-              <a className="py-2 px-2 font-semibold hover:text-primary transition duration-300">
+              <a
+                className={`${paragraphFontFamily} py-2 px-2 font-semibold hover:text-primary transition duration-300`}
+              >
                 {text("navbar-why-ziwo")}
               </a>
             </Link>
 
             <Link href="#Integration">
-              <a className="py-2 px-2 font-semibold hover:text-primary transition duration-300">
+              <a
+                className={`${paragraphFontFamily} py-2 px-2 font-semibold hover:text-primary transition duration-300`}
+              >
                 {text("navbar-integrations")}
               </a>
             </Link>
             <Link href="#benefits">
-              <a className="py-2 px-2  font-semibold hover:text-primary transition duration-300">
+              <a
+                className={`${paragraphFontFamily} py-2 px-2 font-semibold hover:text-primary transition duration-300`}
+              >
                 {text("navbar-benefits")}
               </a>
             </Link>
             <Link href="#customized-plans">
-              <a className="py-2 px-2 font-semibold hover:text-primary transition duration-300">
+              <a
+                className={`${paragraphFontFamily} py-2 px-2 font-semibold hover:text-primary transition duration-300`}
+              >
                 {text("navbar-customized-plans")}
               </a>
             </Link>
             <Link href="#pricing">
-              <a className="py-2 px-2  font-semibold hover:text-primary transition duration-300">
+              <a
+                className={`${paragraphFontFamily} py-2 px-2 font-semibold hover:text-primary transition duration-300`}
+              >
                 {text("navbar-pricing")}
               </a>
             </Link>
@@ -88,29 +101,20 @@ const Navbar = () => {
             />
           </span>
           <select
-            className="pr-1 py-2 rounded mr-3 "
+            className={"pr-1 py-2 rounded mr-3"}
             onChange={() => handleLanguageToggle(event)}
           >
             <option
               value="en-US"
               selected={!isArabicLanguage}
-              className="font-nunito"
+              className="nunito"
             >
               English
             </option>
-            <option
-              selected={isArabicLanguage}
-              className="font-nunito"
-              value="ar"
-            >
+            <option selected={isArabicLanguage} className="cairo" value="ar">
               العربية
             </option>
           </select>
-          {/* <Link href="/">
-            <a className="py-2 px-4 font-medium  rounded hover:bg-primary hover:text-white transition duration-300">
-              Log In
-            </a>
-          </Link> */}
           <div className="hidden lg:flex items-center space-x-3 mx-3">
             <Link href="/">
               <a>
@@ -119,7 +123,10 @@ const Navbar = () => {
             </Link>
           </div>
           <div className="lg:hidden flex items-center">
-            <button className="outline-none" onClick={handleMobileMenuToggle}>
+            <button
+              className="outline-none mx-3"
+              onClick={handleMobileMenuToggle}
+            >
               <svg
                 className="w-6 h-6  hover:text-primary"
                 x-show="! showMobileMenu"
@@ -142,7 +149,7 @@ const Navbar = () => {
           <li>
             <Link href="#why-ziwo">
               <a
-                className="block text-sm px-2 py-4 transition hover:text-primary duration-300"
+                className={`${paragraphFontFamily} block text-sm px-2 py-4 transition hover:text-primary duration-300`}
                 onClick={handleMobileMenuToggle}
               >
                 {text("navbar-why-ziwo")}
@@ -152,7 +159,7 @@ const Navbar = () => {
           <li>
             <Link href="#Integration">
               <a
-                className="block text-sm px-2 py-4 transition hover:text-primary duration-300"
+                className={`${paragraphFontFamily} block text-sm px-2 py-4 transition hover:text-primary duration-300`}
                 onClick={handleMobileMenuToggle}
               >
                 {text("navbar-integrations")}
@@ -162,7 +169,7 @@ const Navbar = () => {
           <li>
             <Link href="#Benefits">
               <a
-                className="block text-sm px-2 py-4 transition hover:text-primary duration-300"
+                className={`${paragraphFontFamily} block text-sm px-2 py-4 transition hover:text-primary duration-300`}
                 onClick={handleMobileMenuToggle}
               >
                 {text("navbar-benefits")}
@@ -172,7 +179,7 @@ const Navbar = () => {
           <li>
             <Link href="#customized-plans">
               <a
-                className="block text-sm px-2 py-4 hover:text-primary  duration-300"
+                className={`${paragraphFontFamily} block text-sm px-2 py-4 hover:text-primary  duration-300`}
                 onClick={handleMobileMenuToggle}
               >
                 {text("navbar-customized-plans")}
@@ -182,7 +189,7 @@ const Navbar = () => {
           <li>
             <Link href="#pricing">
               <a
-                className="block text-sm px-2 py-4 transition hover:text-primary duration-300"
+                className={`${paragraphFontFamily} block text-sm px-2 py-4 transition hover:text-primary duration-300`}
                 onClick={handleMobileMenuToggle}
               >
                 {text("navbar-pricing")}

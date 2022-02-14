@@ -6,6 +6,16 @@
     "profitable-paragraph-second": "payment plan is fixable and smooth, companies can choose between monthly or yearly subscription fees.",
 
 
+    "user-subscription-type": "Per User per month",
+    "user-billing-type": "Billed Annually", 
+
+    "profitable-sbuscription-quaterly": "Quarterly", 
+    "profitable-sbuscription-yearly": "Yearly", 
+
+    "profitable-sbuscription-billing-type-dollar": "US Dollars", 
+    "profitable-sbuscription-billing-type-riyal": "Saudi Riyal", 
+
+
     "profitable-card-business-title": "Cloud Business Phone System",
     "profitable-card-business-price": "$30",
     "profitable-card-business-button-title": "Get Started",
@@ -33,7 +43,7 @@
 
     "profitable-card-enterprise-title": "Enterprise",
     "profitable-card-enterprise-title-description": "100+",
-    "profitable-card-enterprise-short-title-description": "users",
+    "profitable-card-enterprise-short-title-description": "Are you looking for more than 100 agents, or maybe customized features?",
     "profitable-card-enterprise-short-description": "Additional Options to Meet your Complete Business Needs",
     "profitable-card-enterprise-button-title": "Contact us",
     "profitable-card-enterprise-list-item-1": "High Availability",

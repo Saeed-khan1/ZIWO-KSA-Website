@@ -5,8 +5,17 @@
     "profitable-paragraph-color-text": "ZIWO ",
     "profitable-paragraph-second": "باقات تمكنك من دفع الفواتير بشكل سلس وسريع، كما ويمكن للشركات الاختيار بين رسوم الاشتراك الشهرية أو السنوية.",
 
+    "user-subscription-type": "لكل مستخدم شهرياً",
+    "user-billing-type": "الدفع سنوياً",
+
+    "profitable-sbuscription-quaterly": "كل ثلاثة أشهر", 
+    "profitable-sbuscription-yearly": "ايونس", 
+
+    "profitable-sbuscription-billing-type-dollar": "يكيرمأ رالود", 
+    "profitable-sbuscription-billing-type-riyal": "يدوعس لاير",
+
     "profitable-card-business-title": "نظام هواتف سحابي للأعمال",
-    "profitable-card-business-price": "$30",
+    "profitable-card-business-price": "س.ر ١١٣",
     "profitable-card-business-button-title": "البدء معنا",
     "profitable-card-business-experience": "3 مستخدمين على الأقل",
     "profitable-card-business-description": "مثالي للتعاملات غير المباشرة مع الزبائن أو لموظفي الاستقبال",
@@ -16,7 +25,7 @@
     "profitable-card-business-list-item-4": "رقم هاتف مجاني الموظف المتنقل (استلام المكالمات)",
 
     "profitable-card-contact-title": "مركز اتصال سحابي",
-    "profitable-card-contact-price": "$82",
+    "profitable-card-contact-price": "س.ر ٣٠٨",
     "profitable-card-contact-short-description": "مناسب لمراكز الاتصال",
     "profitable-card-contact-brief-description": "صوت - رسائل نصية - واتساب  موصلات برامج إدارة علاقات العملاء روابط API  - الويب هوك - أدوات تطوير البرمجيات (موبايل SDK) تطبيق الموقع الإلكتروني وتطبيقات الأندرويد وأبل",
     "profitable-card-contact-button-title": "البدء معنا",

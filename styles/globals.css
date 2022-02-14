@@ -6,50 +6,55 @@ html {
   scroll-behavior: smooth;
 }
 
-@layer base {
-  /* All the paragraph and list items have the same font family */
-    p, li {
+/* @layer base { */
+/* All the paragraph and list items have the same font family */
+/* p, li {
         @apply font-nunito;
-    }
+    } */
 
-    /* All the titles have the same the font family*/
-    h1, h2, h3 {
+/* All the titles have the same the font family*/
+/* h1, h2, h3 {
         @apply font-openSans
-    }
-}
+    } */
+/* } */
 
 .text-medium {
-  font-size: 22px
+  font-size: 22px;
 }
 
 /* icon for the list items in the price card */
 .price-card {
-  list-style-image: url('/images/price-card-icon.png');
+  list-style-image: url("/images/price-card-icon.png");
 }
-              
-.card-item {
-    list-style: none;
-    padding-left: 50px;
-    position: relative;
-  }
-  
-  ul li:before {
-    content: "";
-    position: absolute;
-    top: 0px;
-    left: 5px;
-    display: inline-block;
-    height: 30px;
-    width: 30px;
-    background-size: contain;
-    background-image: url("/images/price-card-icon.png");
-  }
 
-  /* Background color of the text in the title */
+.card-item {
+  list-style: none;
+  padding-left: 50px;
+  position: relative;
+}
+
+.card-options li:before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 5px;
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  background-size: contain;
+  background-image: url("/images/price-card-icon.png");
+}
+
+/* Background color of the text in the title */
 .text-gradient {
-  background-image: linear-gradient(120deg,#FFE332,#FFE332);
-    background-repeat: no-repeat;
-    background-size: 100% .5em;
-    background-position: 0 60%;    
-    font-weight: inherit;
+  background-image: linear-gradient(120deg, #ffe332, #ffe332);
+  background-repeat: no-repeat;
+  background-size: 100% 0.5em;
+  background-position: 0 60%;
+  font-weight: inherit;
+}
+
+/* for toggle button in price card  */
+input:checked ~ .dot {
+  transform: translateX(100%);
 }
