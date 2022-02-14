@@ -120,7 +120,6 @@ const ProfitableSolution = () => {
           shortDesciption={text("profitable-card-contact-short-description")}
           userSubscriptionType={text("user-subscription-type")}
           userBillingType={text("user-billing-type")}
-          userSubscriptionType={text("user-subscription-type")}
           briefDescription={text("profitable-card-contact-brief-description")}
           cardBackgroundColor="primary"
           listItemsArray={[
