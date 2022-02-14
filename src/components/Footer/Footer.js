@@ -2,8 +2,12 @@ import Image from "next/image";
 import Link from "next/link";
 import useTranslation from "next-translate/useTranslation";
 
+import Common from "../../Hooks/Common";
+
 const Footer = () => {
   const { t: text } = useTranslation("Footer");
+
+  const { paragraphFontFamily } = Common();
 
   return (
     <footer className="py-3 text-center bg-footerBacgroundColor text-white">
@@ -27,7 +31,9 @@ const Footer = () => {
           />
         </a>
       </Link>
-      <p dir="rtl">{text("footer-text")}</p>
+      <p className={paragraphFontFamily} dir="rtl">
+        {text("footer-text")}
+      </p>
 
       {/* TODO: We will need it in future */}
       {/* <div className="grid  md:grid-cols-5 justify-center md:justify-items-center leading-10">

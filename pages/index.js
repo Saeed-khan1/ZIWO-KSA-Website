@@ -30,9 +30,9 @@ export default function Home() {
         <WhyZiwo />
         <ConnectCrm />
         <Benefits />
-        <CustomizedPlans />
         {/* <Features /> */}
         <CustomerReviews />
+        <CustomizedPlans />
         <ProfitableSolution />
         <Cta />
         <Footer />

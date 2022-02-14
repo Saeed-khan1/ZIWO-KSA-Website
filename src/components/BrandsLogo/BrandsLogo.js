@@ -3,7 +3,7 @@ import Image from "next/image";
 const BrandsLogo = () => {
   return (
     <section>
-      <div className="flex justify-around items-center mt-10 bg-image bg-zinc-50">
+      <div className="flex justify-around items-center mt-10 bg-image bg-neutral-100">
         <Image
           src="/images/alsaif-gallery-logo.png"
           width="87"
@@ -53,12 +53,14 @@ const BrandsLogo = () => {
           />
         </div>
       </div>
+      <div className="-mt-2">
       <Image
-        src="/images/background-bottom-image.png"
-        width="1920"
+        src="/images/background-bottom-image.svg"
+        width="1446"
         height="109"
         alt="background image"
       />
+      </div>
     </section>
   );
 };

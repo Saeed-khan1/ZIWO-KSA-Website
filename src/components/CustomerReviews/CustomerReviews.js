@@ -1,28 +1,31 @@
 import Image from "next/image";
-import { useRouter } from "next/router";
 import useTranslation from "next-translate/useTranslation";
+
+import Common from "../../Hooks/Common";
 
 const CustomerReviews = () => {
   const { t: text } = useTranslation("CustomerReviews");
-  const router = useRouter();
 
-  const isArabicLanguage = router.locale === "ar" && true;
+  const { titleFontFamily, paragraphFontFamily } = Common();
 
   return (
     <section>
-      <Image
-        src="/images/background-top-image.png"
-        width="1920"
-        height="110"
-        // layout="fill"
-        alt="background image"
-      />
-      <div className="flex flex-col items-center bg-zinc-50">
-        <h2 className="text-3xl lg:text-5xl font-bold my-8">
-          {text("customer-title-first")}{" "}
+      <div className="-mb-2">
+        <Image
+          src="/images/background-gradient-top.svg"
+          width="1446"
+          height="109"
+          alt="background image"
+        />
+      </div>
+      <div className="flex flex-col items-center bg-neutral-100">
+        <h2
+          className={`${titleFontFamily} text-3xl lg:text-5xl font-bold my-8`}
+        >
+          {text("customer-title-first")}
           <span className="text-gradient">
             {text("customer-title-color-text")}
-          </span>{" "}
+          </span>
           {text("customer-title-second")}
         </h2>
         {/* TODO: the review star will be dynmaic based on the customer review from backend */}
@@ -41,10 +44,10 @@ const CustomerReviews = () => {
               height="39"
               alt="background image"
             />
-            <h3 className="text-5xl font-bold my-3">
+            <h3 className={`${titleFontFamily} text-5xl font-bold my-3`}>
               <span className="text-primary">4.7</span>/5
             </h3>
-            <p>
+            <p dir="ltr" className={paragraphFontFamily}>
               “<strong>{text("google-description-first")}</strong>{" "}
               {text("google-description-second")}
             </p>
@@ -56,10 +59,10 @@ const CustomerReviews = () => {
               height="34"
               alt="background image"
             />
-            <h3 className="text-5xl font-bold my-3">
+            <h3 className={`${titleFontFamily} text-5xl font-bold my-3`}>
               <span className="text-primary">4.8</span>/5
             </h3>
-            <p>
+            <p className={`${paragraphFontFamily} px-3`} dir="ltr">
               {text("crowed-description-first")}
               <strong>{text("crowed-description-second")}</strong>”
             </p>
@@ -71,10 +74,12 @@ const CustomerReviews = () => {
               height="27"
               alt="background image"
             />
-            <h3 className="text-5xl font-bold my-3">
+            <h3 className={`${titleFontFamily} text-5xl font-bold my-3`}>
               <span className="text-primary">4.8</span>/5
             </h3>
-            <p>{text("capterra-description")}</p>
+            <p className={`${paragraphFontFamily} px-3`} dir="ltr">
+              {text("capterra-description")}
+            </p>
           </div>
         </div>
         {/* <Image
@@ -93,7 +98,10 @@ const CustomerReviews = () => {
                 alt="comma"
               />
             </div>
-            <h4 className="font-bold mx-2 md:ml-20 pl-0 lg:pl-40" dir="rtl">
+            <h4
+              className={`${titleFontFamily} font-bold mx-2 md:ml-20 pl-0 lg:pl-40`}
+              dir="rtl"
+            >
               <span className="text-primary">
                 {text("customer-review-color-text-first")}
               </span>
@@ -123,18 +131,29 @@ const CustomerReviews = () => {
           </div>
         </div>
         <div className="text-center md:text-left font-bold">
-          <p>CitrussTV</p>
+          <p className={`${paragraphFontFamily} text-gray-500`}>
+            {text("customer-review-company-name")}
+          </p>
           <p>
-            Yazan Al-Tamimi IT, <span className="font-normal">Deputy head</span>
+            <p className={`${paragraphFontFamily} text-gray-500`}>
+              {text("customer-review-company-representative-name")}
+            </p>{" "}
+            <span className="font-normal">
+              <p>
+                {text("customer-review-company-representative-designation")}
+              </p>
+            </span>
           </p>
         </div>
       </div>
-      <Image
-        src="/images/background-bottom-image.png"
-        width="1920"
-        height="109"
-        alt="background image"
-      />
+      <div className="-mt-2">
+        <Image
+          src="/images/background-gradient-bottom.svg"
+          width="1446"
+          height="109"
+          alt="background image"
+        />
+      </div>
     </section>
   );
 };

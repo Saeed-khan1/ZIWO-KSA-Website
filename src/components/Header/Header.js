@@ -6,10 +6,15 @@ import useTranslation from "next-translate/useTranslation";
 
 import BrandsLogo from "../BrandsLogo/BrandsLogo";
 import CustomButton from "../Common/CustomButton/CustomButton";
+import Common from "../../Hooks/Common";
 
 const Header = () => {
   const router = useRouter();
   let { t: text } = useTranslation();
+
+  const { titleFontFamily, paragraphFontFamily } = Common();
+
+  console.log("============= paragraphFont", titleFontFamily);
 
   const reverse = router.locale == "ar" ? true : false;
   const isEnglishLocale = router.locale == "en-US" && true;
@@ -36,7 +41,7 @@ const Header = () => {
       <section className={verticalFeatureClass}>
         <div className="w-full lg:w-1/2">
           {/* *********** HEADER TITLE ************************ */}
-          <h1 className="font-bold text-3xl md:text-5xl">
+          <h1 className={`${titleFontFamily} font-bold text-3xl md:text-6xl`}>
             {text("Header:header-title_simply")}{" "}
             <span className="text-gradient">
               {text("Header:header-title_talk")}
@@ -45,18 +50,27 @@ const Header = () => {
             {text("Header:header-title_clients")}
           </h1>
           {/* *********** HEADER PARAGRAPH ************************ */}
-          <p className="my-5 text-medium text-gray-500" dir="rtl">
-            <span className="text-primary font-bold">
-              {isEnglishLocale && text("common:ziwo-name")}
+          <p
+            className={`${paragraphFontFamily} my-5 text-medium text-gray-500`}
+            dir="rtl"
+          >
+            <span className="font-bold">
+              {text("Header:header-paragraph-prefix")}
             </span>
-            {text("Header:header-paragraph")}
+            <span className="text-primary font-bold">
+              {text("Header:header-paragraph-first")}
+            </span>
+            <span className="font-bold">
+              {text("Header:header-paragraph-second-text-bold")}
+            </span>
+            {text("Header:header-paragraph-third")}
           </p>
           <Link href="/">
             <a>
               <CustomButton title={text("common:try-for-free")} />
             </a>
           </Link>
-          <p className="mt-2 text-gray-500">
+          <p className={`${paragraphFontFamily} mt-2 text-gray-500`}>
             {text("Header:header-credit-card")}
           </p>
         </div>

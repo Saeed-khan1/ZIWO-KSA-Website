@@ -2,9 +2,13 @@ import Image from "next/image";
 import { useRouter } from "next/router";
 import useTranslation from "next-translate/useTranslation";
 
+import Common from "../../Hooks/Common";
+
 const WhyZiwo = () => {
   const router = useRouter();
   const { t: text } = useTranslation();
+
+  const { titleFontFamily, paragraphFontFamily } = Common();
 
   const isArabicLanguage = router.locale === "ar" && true;
 
@@ -20,12 +24,12 @@ const WhyZiwo = () => {
       className="flex flex-col items-center h-full mt-16 text-center"
       id="why-ziwo"
     >
-      <h2 className="text-3xl lg:text-5xl font-bold">
+      <h2 className={`${titleFontFamily} text-3xl lg:text-5xl font-bold`}>
         {text("WhyZiwo:why-ziwo-title")}{" "}
         <span className="text-gradient">ZIWO?</span>
       </h2>
       <p
-        className="text-center lg:w-8/12 mt-5 mb-12 md:mb-5 text-medium px-2"
+        className={`${paragraphFontFamily} text-center lg:w-8/12 mt-5 mb-12 md:mb-5 text-medium px-4`}
         dir="rtl"
       >
         <span>

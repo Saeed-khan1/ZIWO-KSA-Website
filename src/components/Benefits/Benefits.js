@@ -3,9 +3,13 @@ import { useRouter } from "next/router";
 import useTranslation from "next-translate/useTranslation";
 import classNames from "classnames";
 
+import Common from "../../Hooks/Common";
+
 const Benefits = () => {
   const router = useRouter();
   const { t: text } = useTranslation("Benefits");
+
+  const { titleFontFamily, paragraphFontFamily } = Common();
 
   const isArabicLanguage = router.locale === "ar" && true;
 
@@ -16,20 +20,20 @@ const Benefits = () => {
         id="benefits"
       >
         {/* *************** TITLE ******************* */}
-        <h2 className="text-3xl lg:text-5xl font-bold">
+        <h2 className={`${titleFontFamily} text-3xl lg:text-5xl font-bold`}>
           {text("benefits-title")}
           <span className="text-gradient">
             {text("benefits-title-bg-text")}
           </span>
         </h2>
         <p
-          className="text-center text-medium px-2 my-2 font-bold text-gray-400"
+          className={`${paragraphFontFamily} text-center text-medium px-2 my-2 font-bold text-gray-400`}
           dir="rtl"
         >
           {text("benefits-paragraph")}
         </p>
         <p
-          className="text-center text-medium px-2 text-primary font-bold"
+          className={`${paragraphFontFamily} text-center text-medium px-2 text-primary font-bold`}
           dir="rtl"
         >
           {text("benefits-paragraph-second")}
@@ -44,10 +48,16 @@ const Benefits = () => {
             height="175"
             alt="omnichannel benefits image"
           />
-          <h4 className="font-bold text-4xl mb-4" dir="rtl">
+          <h4
+            className={`${titleFontFamily} font-bold text-4xl mb-4`}
+            dir="rtl"
+          >
             {text("omnichannel-card-title")}
           </h4>
-          <p className="px-0 xl:px-6 text-lg" dir="rtl">
+          <p
+            className={`${paragraphFontFamily} text-gray-500 px-0 xl:px-6 text-lg`}
+            dir="rtl"
+          >
             {isArabicLanguage && text("omnichannel-card-paragraph-prefix")}
             <span className="text-primary font-bold">
               {text("omnichannel-card-paragraph-first")}
@@ -67,10 +77,16 @@ const Benefits = () => {
             height="175"
             alt="support benefits image"
           />
-          <h4 className="font-bold text-4xl mb-4" dir="rtl">
+          <h4
+            className={`${titleFontFamily} font-bold text-4xl mb-4`}
+            dir="rtl"
+          >
             {text("support-card-title")}
           </h4>
-          <p className="px-0 xl:px-6 text-lg" dir="rtl">
+          <p
+            className={`${paragraphFontFamily} text-gray-500 px-0 xl:px-6 text-lg`}
+            dir="rtl"
+          >
             {text("support-card-paragraph-first")}
             <span className="text-primary font-bold">
               {text("support-card-paragraph-second")}
@@ -91,10 +107,16 @@ const Benefits = () => {
             height="175"
             alt="unique features benefits image"
           />
-          <h4 className="font-bold text-4xl mb-4" dir="rtl">
+          <h4
+            className={`${titleFontFamily} font-bold text-4xl mb-4`}
+            dir="rtl"
+          >
             {text("features-card-title")}
           </h4>
-          <p className="px-0 xl:px-6 text-lg" dir="rtl">
+          <p
+            className={`${paragraphFontFamily} text-gray-500 px-0 xl:px-6 text-lg`}
+            dir="rtl"
+          >
             {text("features-card-paragraph-first")}
             <span className="font-bold text-gray-400">
               {text("features-card-paragraph-second")}
