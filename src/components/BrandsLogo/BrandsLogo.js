@@ -54,12 +54,13 @@ const BrandsLogo = () => {
         </div>
       </div>
       <div className="-mt-2">
-      <Image
-        src="/images/background-bottom-image.svg"
-        width="1446"
-        height="109"
-        alt="background image"
-      />
+        <Image
+          src="/images/background-bottom-image.svg"
+          width="1446"
+          height="109"
+          layout="responsive"
+          alt="background image"
+        />
       </div>
     </section>
   );

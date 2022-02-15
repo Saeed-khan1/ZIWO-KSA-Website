@@ -116,8 +116,8 @@ const Navbar = () => {
             </option>
           </select>
           <div className="hidden lg:flex items-center space-x-3 mx-3">
-            <Link href="/">
-              <a>
+            <Link href="https://demo.ziwo.io/freetrial">
+              <a target="_blank">
                 <CustomButton title={text("navbar-try-for-free-button")} />
               </a>
             </Link>

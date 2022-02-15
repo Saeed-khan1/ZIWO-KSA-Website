@@ -31,8 +31,8 @@ const Cta = () => {
         </span>
         {text("cta-paragraph-second")}
       </p>
-      <Link href="/">
-        <a>
+      <Link href="https://ziwo.typeform.com/contact-us">
+        <a target="_blank">
           <CustomButton title={text("cta-contact-us")} />
         </a>
       </Link>

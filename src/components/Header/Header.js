@@ -63,10 +63,11 @@ const Header = () => {
             <span className="font-bold">
               {text("Header:header-paragraph-second-text-bold")}
             </span>
-            {text("Header:header-paragraph-third")}
+            <span>{text("Header:header-paragraph-third")}</span>
+            <span>{text("Header:header-paragraph-empty")}</span>
           </p>
-          <Link href="/">
-            <a>
+          <Link href="https://demo.ziwo.io/freetrial">
+            <a target="_blank">
               <CustomButton title={text("common:try-for-free")} />
             </a>
           </Link>
@@ -78,7 +79,7 @@ const Header = () => {
           <div className=" hidden lg:flex justify-end">
             {/* *********** HEADER IMAGE ************************ */}
             <Image
-              src="/images/home-image-1.svg"
+              src="/images/home-background.svg"
               width="811"
               height="538"
               alt="background image"
@@ -89,42 +90,6 @@ const Header = () => {
       </section>
       <BrandsLogo />
     </>
-    // <div>
-    //   <div className="grid grid-cols-1 lg:grid-cols-2 mt-10">
-    //     <div className="col-start-1 mx-6 lg:ml-24 mt-10">
-    //       <h1 className="font-bold text-3xl md:text-5xl">Simply.Talk</h1>
-    //       <h1 className="font-bold text-3xl md:text-5xl leading-normal">
-    //         to Your <span className="text-gradient">Clients</span>
-    //       </h1>
-    //       <p className="w-sreen my-7 text-base md:text-2xl tracking-widest	">
-    //         {/* <span className="text-primary font-bold">ZIWO</span> is a leading{" "}
-    //         <span className="font-bold">
-    //           cloud-based telephony system in Saudi Arabia.
-    //         </span>{" "}
-    //         This solution will provide you with crystal clear phone calls and
-    //         many capabilities that will centralize all your phone operations in
-    //         one single interface. */}
-    //         {t("Header:header-paragraph")}
-    //       </p>
-    //       <Link href="/">
-    //         <a>
-    //           <CustomButton title="Try fro free" />
-    //         </a>
-    //       </Link>
-    //       <p className="mt-3 font-bold">No credit card required</p>
-    //     </div>
-    //     <div className=" hidden lg:flex justify-end">
-    //       <Image
-    //         src="/images/home-image.png"
-    //         width="856"
-    //         height="567"
-    //         alt="background image"
-    //         priority
-    //       />
-    //     </div>
-    //   </div>
-    //   <BrandsLogo />
-    // </div>
   );
 };
 

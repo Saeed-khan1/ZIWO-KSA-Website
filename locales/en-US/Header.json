@@ -5,6 +5,7 @@
     "header-paragraph-prefix": "",
     "header-paragraph-first": "ZIWO ",
     "header-paragraph-second-text-bold": "is a leading cloud-based telephony system in Saudi Arabia. ",
-    "header-paragraph-third": "This solution will provide you with crystal clear phone calls and many capabilities that will centralize all your phone operations in one single interface.",
-    "header-credit-card": "No credit card required"
-} 
+    "header-paragraph-third": "This solution will provide you with crystal clear phone calls and many capabilities that will centralize all your phone operations in one single interface",
+    "header-credit-card": "No credit card required",
+    "header-paragraph-empty": " "
+}  

@@ -55,18 +55,18 @@ const Benefits = () => {
             {text("omnichannel-card-title")}
           </h4>
           <p
-            className={`${paragraphFontFamily} text-gray-500 px-0 xl:px-6 text-lg`}
+            className={`${paragraphFontFamily} text-gray-500 px-0 xl:px-4 text-lg`}
             dir="rtl"
           >
             {isArabicLanguage && text("omnichannel-card-paragraph-prefix")}
             <span className="text-primary font-bold">
               {text("omnichannel-card-paragraph-first")}
             </span>
-            {text("omnichannel-card-paragraph-second")}
+            <span>{text("omnichannel-card-paragraph-second")}</span>
+            <span className="font-bold text-gray-400">
+              {text("omnichannel-card-paragraph-third")}
+            </span>
           </p>
-          <span className="font-bold text-gray-400">
-            {text("omnichannel-card-paragraph-third")}
-          </span>
         </div>
 
         {/* ************** SUPPPORT ******************** */}

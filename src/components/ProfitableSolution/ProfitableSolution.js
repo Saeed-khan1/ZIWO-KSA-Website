@@ -8,6 +8,7 @@ import Common from "../../Hooks/Common";
 
 const ProfitableSolution = () => {
   const [isDollor, setIsDollor] = React.useState(false);
+  const [isSubscriptionYearly, setIsSubscriptionYearly] = React.useState(false);
 
   const { t: text } = useTranslation("ProfitableSolution");
 
@@ -16,8 +17,12 @@ const ProfitableSolution = () => {
   const { locale } = useRouter();
   const isArabicLanguage = locale === "ar" && true;
 
-  const phoneSystemPriceInDollorOrRiyal = !isDollor ? "$30" : "SA 150";
-  const contactCenterPriceInDollorOrRiyal = !isDollor ? "$82" : "SA 450";
+  const phoneSystemPriceInDollorOrRiyal = isDollor ? "$30" : "SAR 113";
+  const contactCenterPriceInDollorOrRiyal = isDollor ? "$82" : "SAR 308";
+
+  const subscriptionType = !isSubscriptionYearly
+    ? "Billed Annually"
+    : "Billed Quarterly";
 
   const cloudPhoneSystemPrice = isArabicLanguage ? "س.ر ١١٣" : "$30";
   const cloudContactCenterPrice = isArabicLanguage ? "س.ر ٣٠٨" : "$30";
@@ -25,6 +30,11 @@ const ProfitableSolution = () => {
   const handleCurrencyToggle = (event) => {
     const value = event.target.value;
     setIsDollor(!isDollor);
+  };
+
+  const handleSubscriptionTypeToggle = (event) => {
+    const value = event.target.value;
+    setIsSubscriptionYearly(!isSubscriptionYearly);
   };
 
   return (
@@ -52,14 +62,14 @@ const ProfitableSolution = () => {
           className="flex items-center cursor-pointer md:w-1/2 w-full ml-7 mb-4 md:mb-0 md:ml-0 justify-center md:justify-end"
         >
           <p className={`${paragraphFontFamily} mr-3 text-gray-700 font-bold`}>
-            {text("profitable-sbuscription-quaterly")}
+            {text("profitable-sbuscription-yearly")}
           </p>
           <div className="relative">
             <input
               id="toogleA"
               type="checkbox"
               className="sr-only"
-              onChange={handleCurrencyToggle}
+              onChange={handleSubscriptionTypeToggle}
             />
             <div className="w-14 h-6 bg-primary rounded-full shadow-inner"></div>
             <div className="dot absolute w-6 h-6 bg-white rounded-full shadow top-0 right-7 transition"></div>
@@ -67,7 +77,7 @@ const ProfitableSolution = () => {
           <p
             className={`${paragraphFontFamily} ml-3 mr-10 text-gray-700 font-bold`}
           >
-            {text("profitable-sbuscription-yearly")}
+            {text("profitable-sbuscription-quaterly")}
           </p>
         </label>
         <label
@@ -77,7 +87,7 @@ const ProfitableSolution = () => {
           <p
             className={`${paragraphFontFamily} mr-3 ml-10 text-gray-700 font-bold`}
           >
-            {text("profitable-sbuscription-billing-type-dollar")}
+            {text("profitable-sbuscription-billing-type-riyal")}
           </p>
           <div className="relative">
             <input
@@ -91,7 +101,7 @@ const ProfitableSolution = () => {
             <div className="dot absolute w-6 h-6 bg-white rounded-full shadow top-0 right-7 transition"></div>
           </div>
           <p className={`${paragraphFontFamily} ml-3 text-gray-700 font-bold`}>
-            {text("profitable-sbuscription-billing-type-riyal")}
+            {text("profitable-sbuscription-billing-type-dollar")}
           </p>
         </label>
       </div>
@@ -99,13 +109,15 @@ const ProfitableSolution = () => {
       <div className="block lg:flex xl:mx-16">
         <PriceCard
           title={text("profitable-card-business-title")}
-          // titleDescription={text("profitable-card-business-price")}
+          titleDescription={text("profitable-card-business-price")}
           titleDescription={phoneSystemPriceInDollorOrRiyal}
           shortDesciption={text("profitable-card-business-experience")}
+          // userSubscriptionType={contactCenterPriceInDollorOrRiyal}
           userSubscriptionType={text("user-subscription-type")}
-          userBillingType={text("user-billing-type")}
+          userBillingType={subscriptionType}
           briefDescription={text("profitable-card-business-description")}
           buttonTitle={text("profitable-card-business-button-title")}
+          buttonLink="https://demo.ziwo.io/freetrial"
           listItemsArray={[
             text("profitable-card-business-list-item-1"),
             text("profitable-card-business-list-item-2"),
@@ -115,11 +127,12 @@ const ProfitableSolution = () => {
         />
         <PriceCard
           title={text("profitable-card-contact-title")}
-          // titleDescription={text("profitable-card-contact-price")}
+          titleDescription={text("profitable-card-contact-price")}
           titleDescription={contactCenterPriceInDollorOrRiyal}
           shortDesciption={text("profitable-card-contact-short-description")}
+          // userSubscriptionType={contactCenterPriceInDollorOrRiyal}
           userSubscriptionType={text("user-subscription-type")}
-          userBillingType={text("user-billing-type")}
+          userBillingType={subscriptionType}
           briefDescription={text("profitable-card-contact-brief-description")}
           cardBackgroundColor="primary"
           listItemsArray={[
@@ -131,6 +144,7 @@ const ProfitableSolution = () => {
             text("profitable-card-contact-list-item-6"),
             text("profitable-card-contact-list-item-7"),
           ]}
+          buttonLink="https://demo.ziwo.io/freetrial"
           buttonTextColor="text-black"
           buttonBackgroundColor="bg-white"
           buttonTitle={text("profitable-card-contact-button-title")}
@@ -154,6 +168,7 @@ const ProfitableSolution = () => {
             text("profitable-card-enterprise-list-item-7"),
           ]}
           buttonTitle={text("profitable-card-enterprise-button-title")}
+          buttonLink="https://ziwo.typeform.com/contact-us"
         />
       </div>
     </div>

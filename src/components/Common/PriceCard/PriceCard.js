@@ -15,6 +15,7 @@ const PriceCard = ({
   buttonBackgroundColor,
   buttonTextColor,
   buttonTitle,
+  buttonLink,
   userSubscriptionType,
   userBillingType,
 }) => {
@@ -49,8 +50,8 @@ const PriceCard = ({
       </p>
       <p className={`${paragraphFontFamily} px-6`}>{titleShortDescription}</p>
       <div className="my-4">
-        <Link href="/">
-          <a>
+        <Link href={buttonLink}>
+          <a target="_blank">
             <CustomButton
               title={buttonTitle}
               bgColor={buttonBackgroundColor}

@@ -15,6 +15,7 @@ const CustomerReviews = () => {
           src="/images/background-gradient-top.svg"
           width="1446"
           height="109"
+          layout="responsive"
           alt="background image"
         />
       </div>
@@ -22,11 +23,12 @@ const CustomerReviews = () => {
         <h2
           className={`${titleFontFamily} text-3xl lg:text-5xl font-bold my-8`}
         >
+          {text("customer-title-second")}
           {text("customer-title-first")}
           <span className="text-gradient">
             {text("customer-title-color-text")}
           </span>
-          {text("customer-title-second")}
+          {/* {text("customer-title-second")} */}
         </h2>
         {/* TODO: the review star will be dynmaic based on the customer review from backend */}
         <Image
@@ -154,6 +156,7 @@ const CustomerReviews = () => {
           src="/images/background-gradient-bottom.svg"
           width="1446"
           height="109"
+          layout="responsive"
           alt="background image"
         />
       </div>

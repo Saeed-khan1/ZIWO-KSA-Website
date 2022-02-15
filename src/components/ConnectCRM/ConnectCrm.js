@@ -37,6 +37,7 @@ const ConnectCrm = () => {
           src="/images/background-gradient-top.svg"
           width="1446"
           height="109"
+          layout="responsive"
           alt="background image"
         />
       </div>
@@ -76,6 +77,7 @@ const ConnectCrm = () => {
           src="/images/background-gradient-bottom.svg"
           width="1446"
           height="109"
+          layout="responsive"
           alt="background image"
         />
       </div>
