@@ -109,7 +109,7 @@ const ProfitableSolution = () => {
       <div className="block lg:flex xl:mx-16">
         <PriceCard
           title={text("profitable-card-business-title")}
-          titleDescription={text("profitable-card-business-price")}
+          // titleDescription={text("profitable-card-business-price")}
           titleDescription={phoneSystemPriceInDollorOrRiyal}
           shortDesciption={text("profitable-card-business-experience")}
           // userSubscriptionType={contactCenterPriceInDollorOrRiyal}
@@ -127,7 +127,7 @@ const ProfitableSolution = () => {
         />
         <PriceCard
           title={text("profitable-card-contact-title")}
-          titleDescription={text("profitable-card-contact-price")}
+          // titleDescription={text("profitable-card-contact-price")}
           titleDescription={contactCenterPriceInDollorOrRiyal}
           shortDesciption={text("profitable-card-contact-short-description")}
           // userSubscriptionType={contactCenterPriceInDollorOrRiyal}
