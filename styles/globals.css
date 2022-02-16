@@ -6,6 +6,10 @@ html {
   scroll-behavior: smooth;
 }
 
+html {
+  scroll-padding-top: 80px; /* height of sticky header */
+}
+
 /* @layer base { */
 /* All the paragraph and list items have the same font family */
 /* p, li {

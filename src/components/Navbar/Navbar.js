@@ -167,7 +167,7 @@ const Navbar = () => {
             </Link>
           </li>
           <li>
-            <Link href="#Benefits">
+            <Link href="#benefits">
               <a
                 className={`${paragraphFontFamily} block text-sm px-2 py-4 transition hover:text-primary duration-300`}
                 onClick={handleMobileMenuToggle}
