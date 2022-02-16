@@ -17,8 +17,23 @@ const ProfitableSolution = () => {
   const { locale } = useRouter();
   const isArabicLanguage = locale === "ar" && true;
 
-  const phoneSystemPriceInDollorOrRiyal = isDollor ? "$30" : "SAR 113";
-  const contactCenterPriceInDollorOrRiyal = isDollor ? "$82" : "SAR 308";
+  const phoneSystemPriceInDollorOrRiyal =
+    isDollor && !isSubscriptionYearly
+      ? "$30"
+      : isDollor && isSubscriptionYearly
+      ? "$40"
+      : !isDollor && !isSubscriptionYearly
+      ? "SAR 113"
+      : "SAR 150";
+  const contactCenterPriceInDollorOrRiyal =
+    isDollor && !isSubscriptionYearly
+      ? "$82"
+      : isDollor && isSubscriptionYearly
+      ? "$109"
+      : !isDollor && !isSubscriptionYearly
+      ? "SAR 308"
+      : "SAR 409";
+  // isDollor ? "$82" : "SAR 308";
 
   const subscriptionType = !isSubscriptionYearly
     ? "Billed Annually"

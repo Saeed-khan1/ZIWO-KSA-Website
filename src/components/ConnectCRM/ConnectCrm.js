@@ -45,15 +45,15 @@ const ConnectCrm = () => {
         <div className=" w-full md:w-1/2 lg:text-left mb-8 md:px-10 xl:px-24">
           {/* <div className="w-full md:w-1/2 lg:text-left mb-8 md:pl-10 xl:pl-24"> */}
           <h3
-            className={`${alignText} ${titleFontFamily} text-3xl lg:text-5xl font-bold p-4`}
+            className={`${alignText} ${titleFontFamily} text-4xl lg:text-5xl font-bold p-4`}
             dir="rtl"
           >
             <span className="text-gradient">{text("crm-title-first")}</span>
             {text("crm-title-second")}
           </h3>
           <p
-            className={`${alignText} ${paragraphFontFamily} mt-2 leading-8 p-4 text-2xl  text-gray-500`}
-            dir="rtl"
+            className={`${alignText} ${paragraphFontFamily} mt-2 leading-8 p-4 text-medium  text-paragraphGrayColor`}
+            // dir="rtl"
           >
             {text("crm-paragraph-frist")}
             <span className="text-primary font-bold">

@@ -22,6 +22,10 @@ html {
   font-size: 22px;
 }
 
+.titleFontSize {
+  font-size: 38px;
+}
+
 /* icon for the list items in the price card */
 .price-card {
   list-style-image: url("/images/price-card-icon.png");
@@ -36,8 +40,9 @@ html {
 .card-options li:before {
   content: "";
   position: absolute;
-  top: 0px;
-  left: 5px;
+  /* top: 5px; */
+  /* left: 5px; */
+  /* right: 0px; */
   display: inline-block;
   height: 30px;
   width: 30px;

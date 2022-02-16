@@ -141,7 +141,7 @@ const CustomerReviews = () => {
           <p className={`${paragraphFontFamily} text-gray-500`}>
             {text("customer-review-company-name")}
           </p>
-          <p>
+          <p className="mb-2">
             <span className={`${paragraphFontFamily} text-gray-500`}>
               {text("customer-review-company-representative-name")}
             </span>{" "}

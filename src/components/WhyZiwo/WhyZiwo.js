@@ -26,11 +26,11 @@ const WhyZiwo = () => {
     >
       <h2 className={`${titleFontFamily} text-3xl lg:text-5xl font-bold`}>
         {text("WhyZiwo:why-ziwo-title")}{" "}
-        {/* <span className="text-gradient">ZIWO?</span> */}
+        {!isArabicLanguage && <span className="text-gradient">ZIWO?</span>}
       </h2>
       <p
-        className={`${paragraphFontFamily} text-center lg:w-8/12 mt-5 mb-12 md:mb-5 text-medium px-4`}
-        dir="rtl"
+        className={`${paragraphFontFamily} text-center lg:w-6/12 mt-5 mb-12 md:mb-5 text-medium px-10 text-paragraphGrayColor`}
+        // dir="rtl"
       >
         <span>
           {isArabicLanguage && text("WhyZiwo:why-ziwo-arabic-prefix")}

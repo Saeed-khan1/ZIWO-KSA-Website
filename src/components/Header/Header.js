@@ -41,18 +41,21 @@ const Header = () => {
       <section className={verticalFeatureClass}>
         <div className="w-full lg:w-1/2">
           {/* *********** HEADER TITLE ************************ */}
-          <h1 className={`${titleFontFamily} font-bold text-3xl md:text-6xl`}>
+          <h1
+            className={`${titleFontFamily} font-bold titleFontSize md:text-6xl`}
+          >
             {text("Header:header-title_simply")}{" "}
             <span className="text-gradient">
               {text("Header:header-title_talk")}
             </span>
+            {!isEnglishLocale && text("Header:header-title-text-for-arabic")}
             <br />
             {text("Header:header-title_clients")}
           </h1>
           {/* *********** HEADER PARAGRAPH ************************ */}
           <p
-            className={`${paragraphFontFamily} my-5 text-medium text-gray-500`}
-            dir="rtl"
+            className={`${paragraphFontFamily} my-5 text-medium text-paragraphGrayColor`}
+            // dir="rtl"
           >
             <span className="font-bold">
               {text("Header:header-paragraph-prefix")}
@@ -60,11 +63,11 @@ const Header = () => {
             <span className="text-primary font-bold">
               {text("Header:header-paragraph-first")}
             </span>
+            {isEnglishLocale && text("Header:header-text")}
             <span className="font-bold">
               {text("Header:header-paragraph-second-text-bold")}
             </span>
             <span>{text("Header:header-paragraph-third")}</span>
-            <span>{text("Header:header-paragraph-empty")}</span>
           </p>
           <Link href="https://demo.ziwo.io/freetrial">
             <a target="_blank">

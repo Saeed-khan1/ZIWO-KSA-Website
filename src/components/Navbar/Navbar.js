@@ -50,7 +50,7 @@ const Navbar = () => {
           </div>
           {/* ************************************ PRIMARY NAVBAR ITEMS  ************************************** */}
           <div
-            className={`hidden lg:flex items-center space-x-9 xl:space-x-14 ${swipContent} `}
+            className={`hidden lg:flex items-center space-x-5 lg:space-x-7 xl:space-x-14 ${swipContent} `}
           >
             <Link href="#why-ziwo">
               <a

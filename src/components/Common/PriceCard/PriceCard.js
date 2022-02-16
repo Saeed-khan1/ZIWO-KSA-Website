@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { useRouter } from "next/router";
 import classNames from "classnames";
 
 import CustomButton from "../CustomButton/CustomButton";
@@ -21,6 +22,9 @@ const PriceCard = ({
 }) => {
   const { titleFontFamily, paragraphFontFamily } = Common();
 
+  const { locale } = useRouter();
+  const isArabicLanguage = locale === "ar" && true;
+
   const cardClasses = classNames({
     "bg-primary": cardBackgroundColor,
     "text-white": cardBackgroundColor,
@@ -30,6 +34,15 @@ const PriceCard = ({
     "text-whire": cardBackgroundColor,
     "text-primary": !cardBackgroundColor,
   });
+
+  const listItemImagePosition = classNames({
+    "before:-right-12": isArabicLanguage,
+    "text-right": isArabicLanguage,
+    "text-left": !isArabicLanguage,
+    "before:left-2": !isArabicLanguage,
+  });
+
+  const alignText = classNames({});
 
   return (
     <div
@@ -67,12 +80,12 @@ const PriceCard = ({
       <p className={`${paragraphFontFamily} font-bold mb-4`}>
         {briefDescription}
       </p>
-      <ul className="text-left list-disc list-inside price-card card-options">
+      <ul className=" list-disc list-inside price-card card-options">
         {listItemsArray?.map((item, index) => {
           return (
             <li
               key={index}
-              className={`${paragraphFontFamily} mb-2 w-10/12 card-item`}
+              className={`${paragraphFontFamily} ${listItemImagePosition} mb-2 w-10/12 card-item`}
             >
               {item}
             </li>

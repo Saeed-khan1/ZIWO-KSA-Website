@@ -28,13 +28,13 @@ const Benefits = () => {
         </h2>
         <p
           className={`${paragraphFontFamily} text-center text-medium px-2 my-2 font-bold text-gray-400`}
-          dir="rtl"
+          // dir="rtl"
         >
           {text("benefits-paragraph")}
         </p>
         <p
           className={`${paragraphFontFamily} text-center text-medium px-2 text-primary font-bold`}
-          dir="rtl"
+          // dir="rtl"
         >
           {text("benefits-paragraph-second")}
         </p>
@@ -50,13 +50,13 @@ const Benefits = () => {
           />
           <h4
             className={`${titleFontFamily} font-bold text-4xl mb-4`}
-            dir="rtl"
+            // dir="rtl"
           >
             {text("omnichannel-card-title")}
           </h4>
           <p
             className={`${paragraphFontFamily} text-gray-500 px-0 xl:px-4 text-lg`}
-            dir="rtl"
+            // dir="rtl"
           >
             {isArabicLanguage && text("omnichannel-card-paragraph-prefix")}
             <span className="text-primary font-bold">
@@ -79,13 +79,13 @@ const Benefits = () => {
           />
           <h4
             className={`${titleFontFamily} font-bold text-4xl mb-4`}
-            dir="rtl"
+            // dir="rtl"
           >
             {text("support-card-title")}
           </h4>
           <p
             className={`${paragraphFontFamily} text-gray-500 px-0 xl:px-6 text-lg`}
-            dir="rtl"
+            // dir="rtl"
           >
             {text("support-card-paragraph-first")}
             <span className="text-primary font-bold">
@@ -109,13 +109,13 @@ const Benefits = () => {
           />
           <h4
             className={`${titleFontFamily} font-bold text-4xl mb-4`}
-            dir="rtl"
+            // dir="rtl"
           >
             {text("features-card-title")}
           </h4>
           <p
             className={`${paragraphFontFamily} text-gray-500 px-0 xl:px-6 text-lg`}
-            dir="rtl"
+            // dir="rtl"
           >
             {text("features-card-paragraph-first")}
             <span className="font-bold text-gray-400">

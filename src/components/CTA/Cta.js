@@ -17,7 +17,7 @@ const Cta = () => {
     <div className="flex flex-col items-center bg-ctaBackgroundColor text-white mt-10 pb-8">
       <h2
         className={`${titleFontFamily} text-3xl lg:text-5xl font-bold my-8`}
-        dir="rtl"
+        // dir="rtl"
       >
         {text("cta-title")}
       </h2>
