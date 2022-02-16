@@ -23,11 +23,11 @@ const CustomerReviews = () => {
         <h2
           className={`${titleFontFamily} text-3xl lg:text-5xl font-bold my-8`}
         >
-          {text("customer-title-second")}
           {text("customer-title-first")}
           <span className="text-gradient">
             {text("customer-title-color-text")}
           </span>
+          {text("customer-title-second")}
           {/* {text("customer-title-second")} */}
         </h2>
         {/* TODO: the review star will be dynmaic based on the customer review from backend */}
@@ -50,7 +50,7 @@ const CustomerReviews = () => {
               <span className="text-primary">4.7</span>/5
             </h3>
             <p dir="ltr" className={paragraphFontFamily}>
-              <span className="font-bold">
+              <span className="font-bold text-primary">
                 {text("google-description-first")}
               </span>
               {text("google-description-second")}
@@ -68,10 +68,9 @@ const CustomerReviews = () => {
             </h3>
             <p className={`${paragraphFontFamily} px-3`} dir="ltr">
               {text("crowed-description-first")}
-              <span className="font-bold">
+              <span className="font-bold text-primary">
                 {text("crowed-description-second")}
               </span>
-              ”
             </p>
           </div>
           <div className="w-full md:w-4/12 mb-16">
@@ -107,7 +106,7 @@ const CustomerReviews = () => {
             </div>
             <h4
               className={`${titleFontFamily} font-bold mx-2 md:ml-20 pl-0 lg:pl-40`}
-              dir="rtl"
+              // dir="rtl"
             >
               <span className="text-primary">
                 {text("customer-review-color-text-first")}

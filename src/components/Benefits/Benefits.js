@@ -88,11 +88,11 @@ const Benefits = () => {
             // dir="rtl"
           >
             {text("support-card-paragraph-first")}
-            <span className="text-primary font-bold">
+            <span className=" font-bold">
               {text("support-card-paragraph-second")}
             </span>
             {text("support-card-paragraph-third")}
-            <span className="text-primary font-bold">
+            <span className=" font-bold">
               {text("support-card-paragraph-forth")}
             </span>
             {text("support-card-paragraph-fifth")}

@@ -11,8 +11,8 @@ const Footer = () => {
 
   return (
     <footer className="py-3 text-center bg-footerBacgroundColor text-white">
-      <Link href="/">
-        <a>
+      <Link href="https://www.facebook.com/ziwobyaswat">
+        <a target="_blank">
           <Image
             src="/images/facebook-logo.svg"
             width="36"
@@ -21,8 +21,8 @@ const Footer = () => {
           />
         </a>
       </Link>
-      <Link href="/">
-        <a>
+      <Link href="https://www.linkedin.com/company/ziwo/">
+        <a target="_blank">
           <Image
             src="/images/linkedin-logo.svg"
             width="36"
