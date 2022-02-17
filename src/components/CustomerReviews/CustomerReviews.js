@@ -67,7 +67,6 @@ const CustomerReviews = () => {
                 <span className="text-primary">4.7</span>/5
               </h3>
               <p
-                dir="ltr"
                 className={`${paragraphFontFamily} px-3 md:px-8`}
                 dir={textDirection}
               >
