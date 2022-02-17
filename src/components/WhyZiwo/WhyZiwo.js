@@ -12,6 +12,8 @@ const WhyZiwo = () => {
 
   const isArabicLanguage = router.locale === "ar" && true;
 
+  const textDirection = !isArabicLanguage ? "ltr" : "rtl";
+
   const ziwoMapImageOnDesktop = isArabicLanguage
     ? "/images/ziwo-map-desktop-arabic.svg"
     : "/images/ziwo-map-desktop-english.svg";
@@ -24,13 +26,20 @@ const WhyZiwo = () => {
       className="flex flex-col items-center h-full mt-16 text-center"
       id="why-ziwo"
     >
-      <h2 className={`${titleFontFamily} text-3xl lg:text-5xl font-bold`}>
+      <h2
+        className={`${titleFontFamily} text-8xl md:text-10xl font-bold`}
+        dir={textDirection}
+      >
         {text("WhyZiwo:why-ziwo-title")}{" "}
-        {!isArabicLanguage && <span className="text-gradient">ZIWO?</span>}
+        {
+          <span className="text-gradient">
+            {text("WhyZiwo:why-ziwo-title-color")}
+          </span>
+        }
       </h2>
       <p
-        className={`${paragraphFontFamily} text-center lg:w-6/12 mt-5 mb-12 md:mb-5 text-medium px-10 text-paragraphGrayColor`}
-        // dir="rtl"
+        className={`${paragraphFontFamily} leading-9 text-center lg:w-6/12 mt-5 mb-12 md:mb-5 text-base md:text-7xl px-10 text-paragraphGrayColor`}
+        dir={textDirection}
       >
         <span>
           {isArabicLanguage && text("WhyZiwo:why-ziwo-arabic-prefix")}

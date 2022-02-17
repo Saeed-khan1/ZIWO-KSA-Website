@@ -25,6 +25,14 @@ module.exports = {
         openSans: ["Open Sans", "sans-serif"],
         cairo: ["Cairo", "sans-serif"],
       },
+      fontSize: {
+        "7xl": ["1.4rem", { lineHeight: "2.4rem" }], // 22px
+        "8xl": ["2.4rem", { lineHeight: "3.5rem" }], // 38px
+        "9xl": ["3.5rem", { lineHeight: "4rem" }], // 56px
+        "10xl": ["2.9rem", { lineHeight: "3.5rem" }], // 46px
+        "11xl": ["1.9rem", { lineHeight: "2.5rem" }], // 30px
+        // mediumFont: "22px",
+      },
       backgroundImage: {
         "list-item-image": "url('/images/price-card-icon.png')",
         "footer-texture": "url('/img/footer-texture.png')",

@@ -8,6 +8,7 @@
 
     "user-subscription-type": "Per User per month",
     "user-billing-type": "Billed Annually", 
+    "user-billing-type-quarterly": "Billed Quarterly", 
 
     "profitable-sbuscription-quaterly": "Quarterly", 
     "profitable-sbuscription-yearly": "Yearly", 

@@ -7,12 +7,13 @@
 
     "user-subscription-type": "لكل مستخدم شهرياً",
     "user-billing-type": "الدفع سنوياً",
+    "user-billing-type-quarterly": "كل ثلاثة أشهر", 
 
     "profitable-sbuscription-quaterly": "كل ثلاثة أشهر", 
-    "profitable-sbuscription-yearly": "ايونس", 
-
-    "profitable-sbuscription-billing-type-dollar": "يكيرمأ رالود", 
-    "profitable-sbuscription-billing-type-riyal": "يدوعس لاير",
+    "profitable-sbuscription-yearly": "سنوياً", 
+ 
+    "profitable-sbuscription-billing-type-dollar": "دولار أمريكي", 
+    "profitable-sbuscription-billing-type-riyal": "ريال سعودي",
 
     "profitable-card-business-title": "نظام هواتف سحابي للأعمال",
     "profitable-card-business-price": "س.ر ١١٣",
@@ -20,12 +21,13 @@
     "profitable-card-business-experience": "3 مستخدمين على الأقل",
     "profitable-card-business-description": "مثالي للتعاملات غير المباشرة مع الزبائن أو لموظفي الاستقبال",
     "profitable-card-business-list-item-1": "تطبيق سطح المكتب",
-    "profitable-card-business-list-item-2": "نظام اتصالات داخلي سحابي",
-    "profitable-card-business-list-item-3": " النظام الصوتي التفاعلي الموحدالموظف المتنقل (استلام المكالمات) ",
-    "profitable-card-business-list-item-4": "رقم هاتف مجاني الموظف المتنقل (استلام المكالمات)",
+    "profitable-card-business-list-item-2": "يباحس يلخاد تالاصتا ماظ",
+    "profitable-card-business-list-item-3": "دحوملا يلعافتلا يتوصلا ماظنلا) ",
+    "profitable-card-business-list-item-4": "مالتسا ) لقنتملا فظوملا  ( تاملاكملا",
+    "profitable-card-business-list-item-5": "يناجم فتاه مقر",
 
     "profitable-card-contact-title": "مركز اتصال سحابي",
-    "profitable-card-contact-price": "س.ر ٣٠٨",
+    "profitable-card-contact-price": "س.ر ٣٠٨", 
     "profitable-card-contact-short-description": "مناسب لمراكز الاتصال",
     "profitable-card-contact-brief-description": "صوت - رسائل نصية - واتساب  موصلات برامج إدارة علاقات العملاء روابط API  - الويب هوك - أدوات تطوير البرمجيات (موبايل SDK) تطبيق الموقع الإلكتروني وتطبيقات الأندرويد وأبل",
     "profitable-card-contact-button-title": "البدء معنا",
@@ -37,9 +39,9 @@
     "profitable-card-contact-list-item-6": "وقت حضور الموظف تحليل المشاعر",
     "profitable-card-contact-list-item-7": "رقم واتساب شهرياً",
 
-    "profitable-card-enterprise-title": "Enterprise",
-    "profitable-card-enterprise-title-description": "100+",
-    "profitable-card-enterprise-short-title-description": "users",
+    "profitable-card-enterprise-title": "للشركات",
+    "profitable-card-enterprise-title-description": "",
+    "profitable-card-enterprise-short-title-description": "هل تحتاج إلى أكثر من ١٠٠ مستخدم أو إلى مزايا مخصصة؟",
     "profitable-card-enterprise-short-description": "خيارات إضافية لتلبية احتياجات أعمالك بشكل كامل",
     "profitable-card-enterprise-button-title": "تواصل معنا",
     "profitable-card-enterprise-list-item-1": "توافر دائم",

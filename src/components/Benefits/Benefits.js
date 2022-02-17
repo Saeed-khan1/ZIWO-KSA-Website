@@ -13,6 +13,8 @@ const Benefits = () => {
 
   const isArabicLanguage = router.locale === "ar" && true;
 
+  const textDirection = !isArabicLanguage ? "ltr" : "rtl";
+
   return (
     <>
       <section
@@ -20,21 +22,21 @@ const Benefits = () => {
         id="benefits"
       >
         {/* *************** TITLE ******************* */}
-        <h2 className={`${titleFontFamily} text-3xl lg:text-5xl font-bold`}>
+        <h2 className={`${titleFontFamily} text-11xl md:text-10xl font-bold`}>
           {text("benefits-title")}
           <span className="text-gradient">
             {text("benefits-title-bg-text")}
           </span>
         </h2>
         <p
-          className={`${paragraphFontFamily} text-center text-medium px-2 my-2 font-bold text-gray-400`}
-          // dir="rtl"
+          className={`${paragraphFontFamily} text-center text-base md:text-7xl px-2 my-2 text-paragraphGrayColor`}
+          dir={textDirection}
         >
           {text("benefits-paragraph")}
         </p>
         <p
-          className={`${paragraphFontFamily} text-center text-medium px-2 text-primary font-bold`}
-          // dir="rtl"
+          className={`${paragraphFontFamily} text-center text-base md:text-7xl px-2 text-primary font-bold`}
+          dir={textDirection}
         >
           {text("benefits-paragraph-second")}
         </p>
@@ -49,21 +51,21 @@ const Benefits = () => {
             alt="omnichannel benefits image"
           />
           <h4
-            className={`${titleFontFamily} font-bold text-4xl mb-4`}
-            // dir="rtl"
+            className={`${titleFontFamily} font-bold text-11xl mb-4`}
+            dir={textDirection}
           >
             {text("omnichannel-card-title")}
           </h4>
           <p
-            className={`${paragraphFontFamily} text-gray-500 px-0 xl:px-4 text-lg`}
-            // dir="rtl"
+            className={`${paragraphFontFamily} text-paragraphGrayColor px-0 xl:px-4 text-base md:text-lg`}
+            dir={textDirection}
           >
             {isArabicLanguage && text("omnichannel-card-paragraph-prefix")}
             <span className="text-primary font-bold">
               {text("omnichannel-card-paragraph-first")}
             </span>
             <span>{text("omnichannel-card-paragraph-second")}</span>
-            <span className="font-bold text-gray-400">
+            <span className="font-bold text-paragraphGrayColor">
               {text("omnichannel-card-paragraph-third")}
             </span>
           </p>
@@ -72,20 +74,20 @@ const Benefits = () => {
         {/* ************** SUPPPORT ******************** */}
         <div className={classNames({ "order-2": isArabicLanguage })}>
           <Image
-            src="/images/support.svg"
+            src="/images/unique-feature.svg"
             width="175"
             height="175"
             alt="support benefits image"
           />
           <h4
-            className={`${titleFontFamily} font-bold text-4xl mb-4`}
-            // dir="rtl"
+            className={`${titleFontFamily} font-bold text-11xl mb-4`}
+            dir={textDirection}
           >
             {text("support-card-title")}
           </h4>
           <p
-            className={`${paragraphFontFamily} text-gray-500 px-0 xl:px-6 text-lg`}
-            // dir="rtl"
+            className={`${paragraphFontFamily} text-paragraphGrayColor px-0 xl:px-6 text-base md:text-lg`}
+            dir={textDirection}
           >
             {text("support-card-paragraph-first")}
             <span className=" font-bold">
@@ -102,23 +104,23 @@ const Benefits = () => {
         {/* ************** UNIQUE FEATURES ******************** */}
         <div className={classNames({ "order-1": isArabicLanguage })}>
           <Image
-            src="/images/unique-feature.svg"
+            src="/images/support.svg"
             width="175"
             height="175"
             alt="unique features benefits image"
           />
           <h4
-            className={`${titleFontFamily} font-bold text-4xl mb-4`}
-            // dir="rtl"
+            className={`${titleFontFamily} font-bold text-11xl mb-4`}
+            dir={textDirection}
           >
             {text("features-card-title")}
           </h4>
           <p
-            className={`${paragraphFontFamily} text-gray-500 px-0 xl:px-6 text-lg`}
-            // dir="rtl"
+            className={`${paragraphFontFamily} text-paragraphGrayColor px-0 xl:px-6 text-base md:text-lg`}
+            dir={textDirection}
           >
             {text("features-card-paragraph-first")}
-            <span className="font-bold text-gray-400">
+            <span className="font-bold text-paragraphGrayColor">
               {text("features-card-paragraph-second")}
             </span>
           </p>

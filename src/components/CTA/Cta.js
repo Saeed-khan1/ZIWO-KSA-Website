@@ -13,17 +13,23 @@ const Cta = () => {
 
   const isArabicLanguage = router.locale === "ar" && true;
 
+  const contactButtonLink = isArabicLanguage
+    ? "https://ziwo.typeform.com/contact-us-ar"
+    : "https://ziwo.typeform.com/contact-us";
+
+  const textDirection = !isArabicLanguage ? "ltr" : "rtl";
+
   return (
     <div className="flex flex-col items-center bg-ctaBackgroundColor text-white mt-10 pb-8">
       <h2
         className={`${titleFontFamily} text-3xl lg:text-5xl font-bold my-8`}
-        // dir="rtl"
+        dir={textDirection}
       >
         {text("cta-title")}
       </h2>
       <p
         className={`${paragraphFontFamily} mb-6 w-10/12 md:w-6/12 text-center`}
-        dir="rtl"
+        dir={textDirection}
       >
         {text("cta-paragraph-first")}
         <span className="font-bold text-primary">
@@ -31,7 +37,7 @@ const Cta = () => {
         </span>
         {text("cta-paragraph-second")}
       </p>
-      <Link href="https://ziwo.typeform.com/contact-us">
+      <Link href={contactButtonLink}>
         <a target="_blank">
           <CustomButton title={text("cta-contact-us")} />
         </a>

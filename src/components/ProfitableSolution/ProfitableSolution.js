@@ -17,6 +17,16 @@ const ProfitableSolution = () => {
   const { locale } = useRouter();
   const isArabicLanguage = locale === "ar" && true;
 
+  const tryForFreeButtonLink = isArabicLanguage
+    ? "https://ziwo.typeform.com/free-trial-ar"
+    : "https://demo.ziwo.io/freetrial";
+
+  const contactButtonLink = isArabicLanguage
+    ? "https://ziwo.typeform.com/contact-us-ar"
+    : "https://ziwo.typeform.com/contact-us";
+
+  const textDirection = !isArabicLanguage ? "ltr" : "rtl";
+
   const phoneSystemPriceInDollorOrRiyal =
     isDollor && !isSubscriptionYearly
       ? "$30"
@@ -34,10 +44,33 @@ const ProfitableSolution = () => {
       ? "SAR 308"
       : "SAR 409";
   // isDollor ? "$82" : "SAR 308";
+  const phoneSystemPriceInDollorOrRiyalArabic =
+    isDollor && !isSubscriptionYearly
+      ? "٣٠ دولار"
+      : isDollor && isSubscriptionYearly
+      ? "٤٠ دولار"
+      : !isDollor && !isSubscriptionYearly
+      ? "١١٣ ر.س"
+      : "١٥٠ ر.س";
+  const contactCenterPriceInDollorOrRiyalArabic =
+    isDollor && !isSubscriptionYearly
+      ? "٨٢ دولار"
+      : isDollor && isSubscriptionYearly
+      ? "١٠٩ دولار"
+      : !isDollor && !isSubscriptionYearly
+      ? "٣٠٨ ر.س"
+      : "٤٠٩ ر.س";
+
+  const phoneSytemPrice = isArabicLanguage
+    ? phoneSystemPriceInDollorOrRiyalArabic
+    : phoneSystemPriceInDollorOrRiyal;
+  const contactCenterPrice = isArabicLanguage
+    ? contactCenterPriceInDollorOrRiyalArabic
+    : contactCenterPriceInDollorOrRiyal;
 
   const subscriptionType = !isSubscriptionYearly
-    ? "Billed Annually"
-    : "Billed Quarterly";
+    ? text("user-billing-type")
+    : text("user-billing-type-quarterly");
 
   const cloudPhoneSystemPrice = isArabicLanguage ? "س.ر ١١٣" : "$30";
   const cloudContactCenterPrice = isArabicLanguage ? "س.ر ٣٠٨" : "$30";
@@ -63,7 +96,10 @@ const ProfitableSolution = () => {
         </span>{" "}
         {text("profitable-title")}
       </h2>
-      <p className={`${paragraphFontFamily} text-center lg:w-8/12 my-5`}>
+      <p
+        className={`${paragraphFontFamily} text-center lg:w-8/12 my-5 text-base md:text-7xl`}
+        dir={textDirection}
+      >
         {text("profitable-paragraph-first")}
         <span className="text-primary font-bold">
           {text("profitable-paragraph-color-text")}
@@ -125,25 +161,26 @@ const ProfitableSolution = () => {
         <PriceCard
           title={text("profitable-card-business-title")}
           // titleDescription={text("profitable-card-business-price")}
-          titleDescription={phoneSystemPriceInDollorOrRiyal}
+          titleDescription={phoneSytemPrice}
           shortDesciption={text("profitable-card-business-experience")}
           // userSubscriptionType={contactCenterPriceInDollorOrRiyal}
           userSubscriptionType={text("user-subscription-type")}
           userBillingType={subscriptionType}
           briefDescription={text("profitable-card-business-description")}
           buttonTitle={text("profitable-card-business-button-title")}
-          buttonLink="https://demo.ziwo.io/freetrial"
+          buttonLink={tryForFreeButtonLink}
           listItemsArray={[
             text("profitable-card-business-list-item-1"),
             text("profitable-card-business-list-item-2"),
             text("profitable-card-business-list-item-3"),
             text("profitable-card-business-list-item-4"),
+            text("profitable-card-business-list-item-5"),
           ]}
         />
         <PriceCard
           title={text("profitable-card-contact-title")}
           // titleDescription={text("profitable-card-contact-price")}
-          titleDescription={contactCenterPriceInDollorOrRiyal}
+          titleDescription={contactCenterPrice}
           shortDesciption={text("profitable-card-contact-short-description")}
           // userSubscriptionType={contactCenterPriceInDollorOrRiyal}
           userSubscriptionType={text("user-subscription-type")}
@@ -159,7 +196,7 @@ const ProfitableSolution = () => {
             text("profitable-card-contact-list-item-6"),
             text("profitable-card-contact-list-item-7"),
           ]}
-          buttonLink="https://demo.ziwo.io/freetrial"
+          buttonLink={tryForFreeButtonLink}
           buttonTextColor="text-black"
           buttonBackgroundColor="bg-white"
           buttonTitle={text("profitable-card-contact-button-title")}
@@ -183,7 +220,7 @@ const ProfitableSolution = () => {
             text("profitable-card-enterprise-list-item-7"),
           ]}
           buttonTitle={text("profitable-card-enterprise-button-title")}
-          buttonLink="https://ziwo.typeform.com/contact-us"
+          buttonLink={contactButtonLink}
         />
       </div>
     </div>

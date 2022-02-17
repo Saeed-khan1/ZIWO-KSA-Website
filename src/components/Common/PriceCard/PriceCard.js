@@ -42,7 +42,12 @@ const PriceCard = ({
     "before:left-2": !isArabicLanguage,
   });
 
-  const alignText = classNames({});
+  const currenySymbolSize = classNames({
+    "font-base": isArabicLanguage,
+    "font-bold": isArabicLanguage,
+  });
+
+  const textDirection = !isArabicLanguage ? "ltr" : "rtl";
 
   return (
     <div
@@ -50,18 +55,28 @@ const PriceCard = ({
     >
       <h3
         className={`${titleFontFamily} font-bold text-2xl text-center mt-5 lg:px-6 xl:px-10`}
-        dir="rtl"
+        dir={textDirection}
       >
         {title}
       </h3>
-      <h3 className={`${titleFontFamily} mb-6 text-6xl`}>{titleDescription}</h3>
-      <p className={(cardClasses, paragraphFontFamily)}>
+      <h3
+        className={`${titleFontFamily} ${currenySymbolSize} mb-6 text-6xl`}
+        dir={textDirection}
+      >
+        {titleDescription}
+      </h3>
+      <p className={(cardClasses, paragraphFontFamily)} dir={textDirection}>
         {userSubscriptionType}
       </p>
-      <p className={`font-bold ${changeTextColor} ${paragraphFontFamily}`}>
+      <p
+        className={`font-bold ${changeTextColor} ${paragraphFontFamily}`}
+        dir={textDirection}
+      >
         {userBillingType}
       </p>
-      <p className={`${paragraphFontFamily} px-6`}>{titleShortDescription}</p>
+      <p className={`${paragraphFontFamily} px-6`} dir={textDirection}>
+        {titleShortDescription}
+      </p>
       <div className="my-4">
         <Link href={buttonLink}>
           <a target="_blank">
@@ -74,10 +89,10 @@ const PriceCard = ({
         </Link>
       </div>
       <hr className="my-6 w-3/12 mx-auto" />
-      <p className={`${paragraphFontFamily} mb-6 font-bold`}>
+      <p className={`${paragraphFontFamily} mb-6 `} dir={textDirection}>
         {shortDesciption}
       </p>
-      <p className={`${paragraphFontFamily} font-bold mb-4`}>
+      <p className={`${paragraphFontFamily}  mb-4`} dir={textDirection}>
         {briefDescription}
       </p>
       <ul className=" list-disc list-inside price-card card-options">

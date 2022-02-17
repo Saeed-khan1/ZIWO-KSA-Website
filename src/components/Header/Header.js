@@ -14,16 +14,21 @@ const Header = () => {
 
   const { titleFontFamily, paragraphFontFamily } = Common();
 
-  console.log("============= paragraphFont", titleFontFamily);
-
-  const reverse = router.locale == "ar" ? true : false;
   const isEnglishLocale = router.locale == "en-US" && true;
 
+  const buttonLink = !isEnglishLocale
+    ? "https://ziwo.typeform.com/free-trial-ar"
+    : "https://demo.ziwo.io/freetrial";
+
+  const textDirection = isEnglishLocale ? "ltr" : "rtl";
+
   const verticalFeatureClass = classNames(
-    "mt-20",
-    "mx-10",
-    "lg:mx-20",
-    "md:mb-20",
+    "mt-10",
+    // "mx-10",
+    // "lg:mx-20",
+    "container",
+    "mx-auto",
+    // "md:mb-20",
     "flex",
     "flex-wrap",
     "items-center",
@@ -31,19 +36,16 @@ const Header = () => {
     {
       "md:text-left": isEnglishLocale,
       "md:text-right": !isEnglishLocale,
-      "flex-row-reverse": reverse,
+      "flex-row-reverse": !isEnglishLocale,
     }
   );
 
-  console.log("======= ", router.locale, text("common:greeting"));
   return (
     <>
       <section className={verticalFeatureClass}>
-        <div className="w-full lg:w-1/2">
+        <div className="w-full lg:w-4/12">
           {/* *********** HEADER TITLE ************************ */}
-          <h1
-            className={`${titleFontFamily} font-bold titleFontSize md:text-6xl`}
-          >
+          <h1 className={`${titleFontFamily} font-bold text-8xl md:text-9xl`}>
             {text("Header:header-title_simply")}{" "}
             <span className="text-gradient">
               {text("Header:header-title_talk")}
@@ -54,8 +56,8 @@ const Header = () => {
           </h1>
           {/* *********** HEADER PARAGRAPH ************************ */}
           <p
-            className={`${paragraphFontFamily} my-5 text-medium text-paragraphGrayColor`}
-            // dir="rtl"
+            className={`${paragraphFontFamily} px-6 md:px-0 leading-8 md:leading-10 my-4 text-base md:text-7xl text-paragraphGrayColor`}
+            dir={textDirection}
           >
             <span className="font-bold">
               {text("Header:header-paragraph-prefix")}
@@ -69,16 +71,16 @@ const Header = () => {
             </span>
             <span>{text("Header:header-paragraph-third")}</span>
           </p>
-          <Link href="https://demo.ziwo.io/freetrial">
+          <Link href={buttonLink}>
             <a target="_blank">
               <CustomButton title={text("common:try-for-free")} />
             </a>
           </Link>
-          <p className={`${paragraphFontFamily} mt-2 text-gray-500`}>
+          <p className={`${paragraphFontFamily} mt-2 mb-8 text-gray-500`}>
             {text("Header:header-credit-card")}
           </p>
         </div>
-        <div className="w-full lg:w-1/2">
+        <div className="w-full lg:w-8/12">
           <div className=" hidden lg:flex justify-end">
             {/* *********** HEADER IMAGE ************************ */}
             <Image

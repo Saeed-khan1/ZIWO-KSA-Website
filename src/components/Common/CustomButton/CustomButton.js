@@ -12,7 +12,7 @@ const CustomButton = ({
   const buttonClasses = classNames("px-4", {
     "hover:bg-gray-300": bgColor == "bg-white",
     "hover:text-primary": bgColor == "bg-primary",
-    "hover:bg-white": bgColor == "bg-primary",
+    "hover:bg-gray-200": bgColor == "bg-primary",
   });
 
   return (

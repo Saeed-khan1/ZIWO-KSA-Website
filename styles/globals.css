@@ -10,6 +10,10 @@ html {
   scroll-padding-top: 80px; /* height of sticky header */
 }
 
+p {
+  color: paragraphGrayColor;
+}
+
 /* @layer base { */
 /* All the paragraph and list items have the same font family */
 /* p, li {
@@ -66,4 +70,16 @@ html {
 /* for toggle button in price card  */
 input:checked ~ .dot {
   transform: translateX(100%);
+}
+
+@media only screen and (max-width: 640px) {
+  font-medium {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  font-medium {
+    font-size: 50px;
+  }
 }

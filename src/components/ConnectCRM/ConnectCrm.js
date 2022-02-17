@@ -13,6 +13,8 @@ const ConnectCrm = () => {
   const { locale } = useRouter();
   const isArabicLanguage = locale === "ar" && true;
 
+  const textDirection = !isArabicLanguage ? "ltr" : "rtl";
+
   const mainContainer = classNames(
     "mt-15",
     // "md:mb-20",
@@ -30,6 +32,14 @@ const ConnectCrm = () => {
     "lg:text-left": !isArabicLanguage,
   });
 
+  const arabicTextGradient = classNames({
+    "text-gradient": isArabicLanguage,
+  });
+
+  const englishTextGradient = classNames({
+    "text-gradient": !isArabicLanguage,
+  });
+
   return (
     <>
       <div className="-mb-2">
@@ -42,18 +52,23 @@ const ConnectCrm = () => {
         />
       </div>
       <div className={mainContainer} id="Integration">
-        <div className=" w-full md:w-1/2 lg:text-left mb-8 md:px-10 xl:px-24">
+        <div className=" w-full md:w-1/2 lg:text-left mb-8 md:px-10 xl:px-23">
           {/* <div className="w-full md:w-1/2 lg:text-left mb-8 md:pl-10 xl:pl-24"> */}
           <h3
-            className={`${alignText} ${titleFontFamily} text-4xl lg:text-5xl font-bold p-4`}
-            dir="rtl"
+            className={`${alignText} ${titleFontFamily} text-11xl md:text-10xl font-bold p-4`}
+            dir={textDirection}
           >
-            <span className="text-gradient">{text("crm-title-first")}</span>
+            <span className={englishTextGradient}>
+              {text("crm-title-first")}
+            </span>
+            <span className={arabicTextGradient}>
+              {isArabicLanguage && text("crm-title-arabic-color-text")}
+            </span>
             {text("crm-title-second")}
           </h3>
           <p
-            className={`${alignText} ${paragraphFontFamily} mt-2 leading-8 p-4 text-medium  text-paragraphGrayColor`}
-            // dir="rtl"
+            className={`${alignText} ${paragraphFontFamily} mt-2 leading-8 p-4 text-base md:text-7xl  text-paragraphGrayColor`}
+            dir={textDirection}
           >
             {text("crm-paragraph-frist")}
             <span className="text-primary font-bold">
@@ -64,7 +79,7 @@ const ConnectCrm = () => {
         </div>
         <div className="w-full md:w-1/2 p-10">
           <Image
-            src="/images/connect-crm.png"
+            src="/images/connect-crm.svg"
             width="547"
             height="457"
             alt="Supported CRM image"
