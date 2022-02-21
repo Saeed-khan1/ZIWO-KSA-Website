@@ -1,7 +1,11 @@
 const nextTranslate = require("next-translate");
 
 module.exports = {
-  distDir: 'build',
+  experimental: {
+    outputStandalone: true,
+  },
   reactStrictMode: true,
   ...nextTranslate(),
 };
+
+//   distDir: 'build',
