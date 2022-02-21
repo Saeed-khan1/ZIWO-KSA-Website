@@ -1,0 +1,14 @@
+---
+kind: pipeline
+type: kubernetes
+name: default
+service_account_name: drone-runner-aws-privileges
+
+steps:
+  - name: build yoda
+    role_arn_to_assume: 'arn:aws:iam::164490501968:role/prod/gulf/ziwo/k8s_core/drone-runner'
+    image: plugins/kaniko-ecr
+    settings:
+      registry: 164490501968.dkr.ecr.me-south-1.amazonaws.com
+      repo: ksa-website
+      tags: ${DRONE_COMMIT_SHA}
