@@ -5,7 +5,7 @@ name: default
 service_account_name: drone-runner-aws-privileges
 
 steps:
-  - name: build yoda
+  - name: build ksa
     role_arn_to_assume: 'arn:aws:iam::164490501968:role/prod/gulf/ziwo/k8s_core/drone-runner'
     image: plugins/kaniko-ecr
     settings:
