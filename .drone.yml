@@ -10,8 +10,8 @@ steps:
     image: plugins/kaniko-ecr
     resources:
       limits:
-        cpu: 1000
-        memory: 2048MiB
+        cpu: 2000
+        memory: 4096MiB
     settings:
       registry: 164490501968.dkr.ecr.me-south-1.amazonaws.com
       repo: ksa-website
