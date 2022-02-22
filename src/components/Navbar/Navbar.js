@@ -44,8 +44,8 @@ const Navbar = () => {
   });
 
   return (
-    <section className="shadow-sm">
-      <nav className="container mx-auto py-2 sticky bg-white z-50">
+    <section className="shadow-sm sticky top-0 bg-white z-50">
+      <nav className="container mx-auto py-2 ">
         <div className={`${swipContent} flex justify-between`}>
           <div className={`flex ${swipContent} space-x-7`}>
             <div className={logoMargin}>
