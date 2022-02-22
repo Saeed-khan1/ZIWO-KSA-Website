@@ -181,9 +181,9 @@ const CustomerReviews = () => {
       </div>
       <div className="bg-neutral-100">
         <div
-          className={`text-center md:${alignText} container mx-auto px-0 md:px-32 ml-0 md:${
-            isArabicLanguage ? "mr-34" : "ml-36"
-          }`}
+          className={`text-center md:${alignText} container mx-auto ${
+            isArabicLanguage ? "md:mr-40" : "md:ml-40"
+          } md:px-28`}
         >
           <p
             className={`${paragraphFontFamily} text-paragraphGrayColor`}
