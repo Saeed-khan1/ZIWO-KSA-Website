@@ -21,6 +21,7 @@ const Footer = () => {
           />
         </a>
       </Link>
+      <span className="px-1"></span>
       <Link href="https://www.linkedin.com/company/ziwo/">
         <a target="_blank">
           <Image
