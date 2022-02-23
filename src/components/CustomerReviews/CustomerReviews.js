@@ -186,7 +186,9 @@ const CustomerReviews = () => {
           } md:px-28`}
         >
           <p
-            className={`${paragraphFontFamily} text-paragraphGrayColor`}
+            className={`${paragraphFontFamily} ${
+              !isArabicLanguage && "font-bold"
+            } text-paragraphGrayColor`}
             dir={textDirection}
           >
             {text("customer-review-company-name")}
@@ -195,7 +197,9 @@ const CustomerReviews = () => {
             className={`mb-2 text-paragraphGrayColor ${paragraphFontFamily}`}
             dir={textDirection}
           >
-            <span>{text("customer-review-company-representative-name")}</span>
+            <span className={!isArabicLanguage && "font-bold"}>
+              {text("customer-review-company-representative-name")}
+            </span>
             <span className={`${isArabicLanguage && "block"}`}>
               {text("customer-review-company-representative-designation")}
             </span>
