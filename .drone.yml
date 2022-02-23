@@ -39,4 +39,4 @@ steps:
       MANIFEST_BRANCH: master
       IMAGES: 164490501968.dkr.ecr.me-south-1.amazonaws.com/ksa-website
       IMAGE_TAG: ${DRONE_COMMIT_SHA}
-      KUSTOMIZATION: marketing/ksa-landing-page/overlays/production
+      KUSTOMIZATION: marketing/ksa-landing-page/production
