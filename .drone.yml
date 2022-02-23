@@ -5,30 +5,23 @@ name: default
 service_account_name: drone-runner-aws-privileges
 
 steps:
-  # - name: test
-  #   image: ubuntu:latest
-  #   environment:
-  #     SSH_KEY:
-  #       from_secret: github-ssh
-  #   commands:
-  #     - sleep 3600
-  # - name: build ksa
-  #   role_arn_to_assume: 'arn:aws:iam::164490501968:role/prod/gulf/ziwo/k8s_core/drone-runner'
-  #   image: plugins/kaniko-ecr
-  #   resources:
-  #     limits:
-  #       cpu: 2000
-  #       memory: 4096MiB
-  #   settings:
-  #     registry: 164490501968.dkr.ecr.me-south-1.amazonaws.com
-  #     repo: ksa-website
-  #     tags:
-  #       - ${DRONE_COMMIT_SHA}
-  #       - latest
-  #   when:
-  #     branch:
-  #       - master
-  - name: kustomization
+  - name: build ksa
+    role_arn_to_assume: 'arn:aws:iam::164490501968:role/prod/gulf/ziwo/k8s_core/drone-runner'
+    image: plugins/kaniko-ecr
+    resources:
+      limits:
+        cpu: 2000
+        memory: 4096MiB
+    settings:
+      registry: 164490501968.dkr.ecr.me-south-1.amazonaws.com
+      repo: ksa-website
+      tags:
+        - ${DRONE_COMMIT_SHA}
+        - latest
+    when:
+      branch:
+        - master
+  - name: update IaC
     image: minghsu0107/update-kustomization
     environment:
       SSH_KEY:
