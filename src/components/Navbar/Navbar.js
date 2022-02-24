@@ -66,7 +66,7 @@ const Navbar = () => {
             >
               <Link href="#why-ziwo">
                 <a
-                  className={`${paragraphFontFamily} ${itemSpacing} py-2 px-4 font-semibold hover:text-primary hover:font-normal  hover:bg-gray-100 transition duration-300`}
+                  className={`${paragraphFontFamily} ${itemSpacing} py-2 px-4 font-semibold hover:text-primary   hover:bg-gray-100 transition duration-300`}
                 >
                   {text("navbar-why-ziwo")}
                 </a>
@@ -74,28 +74,28 @@ const Navbar = () => {
 
               <Link href="#Integration">
                 <a
-                  className={`${paragraphFontFamily} py-2 px-4 font-semibold hover:text-primary hover:bg-gray-100 hover:font-normal transition duration-300`}
+                  className={`${paragraphFontFamily} py-2 px-4 font-semibold hover:text-primary hover:bg-gray-100  transition duration-300`}
                 >
                   {text("navbar-integrations")}
                 </a>
               </Link>
               <Link href="#benefits">
                 <a
-                  className={`${paragraphFontFamily} py-2 px-4 font-semibold hover:text-primary hover:bg-gray-100 hover:font-normal transition duration-300`}
+                  className={`${paragraphFontFamily} py-2 px-4 font-semibold hover:text-primary hover:bg-gray-100  transition duration-300`}
                 >
                   {text("navbar-benefits")}
                 </a>
               </Link>
               <Link href="#customized-plans">
                 <a
-                  className={`${paragraphFontFamily} py-2 px-4 font-semibold hover:text-primary hover:bg-gray-100 hover:font-normal transition duration-300`}
+                  className={`${paragraphFontFamily} py-2 px-4 font-semibold hover:text-primary hover:bg-gray-100  transition duration-300`}
                 >
                   {text("navbar-customized-plans")}
                 </a>
               </Link>
               <Link href="#pricing">
                 <a
-                  className={`${paragraphFontFamily} py-2 px-4 font-semibold hover:text-primary hover:bg-gray-100 hover:font-normal transition duration-300`}
+                  className={`${paragraphFontFamily} py-2 px-4 font-semibold hover:text-primary hover:bg-gray-100  transition duration-300`}
                 >
                   {text("navbar-pricing")}
                 </a>
