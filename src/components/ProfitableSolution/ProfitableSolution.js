@@ -112,7 +112,11 @@ const ProfitableSolution = () => {
           htmlFor="toogleA"
           className="flex items-center cursor-pointer md:w-1/2 w-full ml-7 mb-4 md:mb-0 md:ml-0 justify-center md:justify-end"
         >
-          <p className={`${paragraphFontFamily} mr-3 text-gray-700 font-bold`}>
+          <p
+            className={`${paragraphFontFamily} ${
+              isSubscriptionYearly ? "text-paragraphGrayColor" : "text-black"
+            } mr-3 font-bold`}
+          >
             {text("profitable-sbuscription-yearly")}
           </p>
           <div className="relative">
@@ -126,7 +130,9 @@ const ProfitableSolution = () => {
             <div className="dot absolute w-6 h-6 mt-0.5 bg-white rounded-full shadow top-0 right-7 transition"></div>
           </div>
           <p
-            className={`${paragraphFontFamily} ml-3 mr-10 text-gray-700 font-bold`}
+            className={`${paragraphFontFamily} ${
+              !isSubscriptionYearly ? "text-paragraphGrayColor" : "text-black"
+            } ml-3 mr-10 font-bold`}
           >
             {text("profitable-sbuscription-quaterly")}
           </p>
@@ -136,7 +142,9 @@ const ProfitableSolution = () => {
           className="flex items-center cursor-pointer md:w-1/2 w-full justify-center md:justify-start mr-6 md:mr-0 border-0 md:border-l-2"
         >
           <p
-            className={`${paragraphFontFamily} mr-3 ml-10 text-gray-700 font-bold`}
+            className={`${paragraphFontFamily} ${
+              isDollor ? "text-paragraphGrayColor" : "text-black"
+            } mr-3 ml-10 font-bold`}
           >
             {text("profitable-sbuscription-billing-type-riyal")}
           </p>
@@ -151,7 +159,11 @@ const ProfitableSolution = () => {
             <div className="w-14 h-7 bg-primary rounded-full shadow-inner"></div>
             <div className="dot absolute w-6 h-6 mt-0.5 bg-white rounded-full shadow top-0 right-7 transition"></div>
           </div>
-          <p className={`${paragraphFontFamily} ml-3 text-gray-700 font-bold`}>
+          <p
+            className={`${paragraphFontFamily} ${
+              !isDollor ? "text-paragraphGrayColor" : "text-black"
+            } ml-3 font-bold`}
+          >
             {text("profitable-sbuscription-billing-type-dollar")}
           </p>
         </label>
