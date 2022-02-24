@@ -122,8 +122,8 @@ const ProfitableSolution = () => {
               className="sr-only"
               onChange={handleSubscriptionTypeToggle}
             />
-            <div className="w-14 h-6 bg-primary rounded-full shadow-inner"></div>
-            <div className="dot absolute w-6 h-6 bg-white rounded-full shadow top-0 right-7 transition"></div>
+            <div className="w-14 h-7 bg-primary rounded-full shadow-inner"></div>
+            <div className="dot absolute w-6 h-6 mt-0.5 bg-white rounded-full shadow top-0 right-7 transition"></div>
           </div>
           <p
             className={`${paragraphFontFamily} ml-3 mr-10 text-gray-700 font-bold`}
@@ -148,8 +148,8 @@ const ProfitableSolution = () => {
               value={true}
               onChange={handleCurrencyToggle}
             />
-            <div className="w-14 h-6 bg-primary rounded-full shadow-inner"></div>
-            <div className="dot absolute w-6 h-6 bg-white rounded-full shadow top-0 right-7 transition"></div>
+            <div className="w-14 h-7 bg-primary rounded-full shadow-inner"></div>
+            <div className="dot absolute w-6 h-6 mt-0.5 bg-white rounded-full shadow top-0 right-7 transition"></div>
           </div>
           <p className={`${paragraphFontFamily} ml-3 text-gray-700 font-bold`}>
             {text("profitable-sbuscription-billing-type-dollar")}
@@ -191,6 +191,7 @@ const ProfitableSolution = () => {
             text("profitable-card-contact-list-item-1"),
             text("profitable-card-contact-list-item-2"),
             text("profitable-card-contact-list-item-3"),
+            text("profitable-card-contact-list-item-8"),
             text("profitable-card-contact-list-item-4"),
             text("profitable-card-contact-list-item-5"),
             text("profitable-card-contact-list-item-6"),

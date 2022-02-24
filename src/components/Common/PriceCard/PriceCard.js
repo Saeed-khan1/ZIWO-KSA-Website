@@ -60,7 +60,7 @@ const PriceCard = ({
         {title}
       </h3>
       <h3
-        className={`${titleFontFamily} ${currenySymbolSize} mb-6 text-6xl`}
+        className={`${titleFontFamily} ${currenySymbolSize} my-6 text-10xl font-semibold `}
         dir={textDirection}
       >
         {titleDescription}

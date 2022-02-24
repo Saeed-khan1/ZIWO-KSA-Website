@@ -25,7 +25,8 @@
     "profitable-card-business-list-item-1": "Desktop App",
     "profitable-card-business-list-item-2": "Cloud PBX",
     "profitable-card-business-list-item-3": "Standard IVR (Interactive Voice Response)",
-    "profitable-card-business-list-item-4": "Free Standard DID Inbound Roaming Agent",
+    "profitable-card-business-list-item-4": "Inbound Roaming Agent",
+    "profitable-card-business-list-item-5": "Free Standard DID",
 
 
     "profitable-card-contact-title": "Cloud Contact Center",
@@ -35,11 +36,12 @@
     "profitable-card-contact-button-title": "Get Started",
     "profitable-card-contact-list-item-1": "Cloud PBX",
     "profitable-card-contact-list-item-2": "Customer IVR (Interactive Voice Response)",
-    "profitable-card-contact-list-item-3": "ACD (Automatic Call Distribution) Call Recordings",
+    "profitable-card-contact-list-item-3": "ACD (Automatic Call Distribution)",
     "profitable-card-contact-list-item-4": "Call Whispering",
     "profitable-card-contact-list-item-5": "Agent Status",
     "profitable-card-contact-list-item-6": "Agent Attendance Time    Sentiment Analysis",
     "profitable-card-contact-list-item-7": "WhatsApp Number (99$ per month)",
+    "profitable-card-contact-list-item-8": "Call Recordings",
 
 
     "profitable-card-enterprise-title": "Enterprise",
