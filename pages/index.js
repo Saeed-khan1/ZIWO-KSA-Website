@@ -22,7 +22,7 @@ export default function Home() {
     : "برنامج مركز الاتصال السحابي | مركز الاتصال السحابي | حلول مراكز الاتصال | حلول ZIWO |";
   const pageMetaDescription = isEnglishLocale
     ? "Cloud Contact Center Solution - API Based CRM integration - International Virtual Phone Numbers - Call tracking - Call masking - IVR"
-    : "رنامج مركز اتصالات سحابي – واجهة برمجة التطبيقات – برامج إدارة علاقات العملاء – ارقام هواتف من مخالف الدول – تتبع المكالمات – إخفاء الرقم";
+    : "برنامج مركز اتصالات سحابي – واجهة برمجة التطبيقات – برامج إدارة علاقات العملاء – ارقام هواتف من مخالف الدول – تتبع المكالمات – إخفاء الرقم";
 
   return (
     <>
