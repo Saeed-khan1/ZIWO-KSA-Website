@@ -45,13 +45,17 @@ const Header = () => {
       <section className={verticalFeatureClass}>
         <div className="w-full lg:w-4/12">
           {/* *********** HEADER TITLE ************************ */}
-          <h1 className={`${titleFontFamily} font-bold text-8xl md:text-9xl`}>
+          <h1
+            className={`${titleFontFamily} font-bold text-8xl md:text-9xl`}
+            dir={textDirection}
+          >
             {text("Header:header-title_simply")}{" "}
             <span className="text-gradient">
               {text("Header:header-title_talk")}
             </span>
-            {!isEnglishLocale && text("Header:header-title-text-for-arabic")}
-            <br />
+            <span>
+              {!isEnglishLocale && text("Header:header-title-text-for-arabic")}
+            </span>
             {text("Header:header-title_clients")}
           </h1>
           {/* *********** HEADER PARAGRAPH ************************ */}
