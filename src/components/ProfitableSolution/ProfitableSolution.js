@@ -132,7 +132,7 @@ const ProfitableSolution = () => {
           <p
             className={`${paragraphFontFamily} ${
               !isSubscriptionYearly ? "text-paragraphGrayColor" : "text-black"
-            } ml-3 mr-10 font-bold`}
+            } ml-3 mr-0 md:mr-10 font-bold`}
           >
             {text("profitable-sbuscription-quaterly")}
           </p>
@@ -144,7 +144,7 @@ const ProfitableSolution = () => {
           <p
             className={`${paragraphFontFamily} ${
               isDollor ? "text-paragraphGrayColor" : "text-black"
-            } mr-3 ml-10 font-bold`}
+            } mr-3 ml-0 md:ml-10 font-bold`}
           >
             {text("profitable-sbuscription-billing-type-riyal")}
           </p>

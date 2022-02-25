@@ -51,7 +51,7 @@ const PriceCard = ({
 
   return (
     <div
-      className={`${cardClasses} px-4 mb-6 py-4 max-w-sm h-full border-2 shadow-md rounded-xl mx-s lg:mx-6`}
+      className={`${cardClasses} px-4 mb-6 py-4 w-80 h-full border-2 shadow-md rounded-xl mx-s lg:mx-6`}
     >
       <h3
         className={`${titleFontFamily} font-bold text-2xl text-center mt-5 lg:px-6 xl:px-10`}
