@@ -24,7 +24,7 @@ const CustomerReviews = () => {
     <section>
       <div className="-mb-2">
         <Image
-          src="/images/background-gradient-top.svg"
+          src="/images/background-gradient-top.png"
           width="1446"
           height="109"
           layout="responsive"
@@ -208,7 +208,7 @@ const CustomerReviews = () => {
       </div>
       <div className="-mt-3">
         <Image
-          src="/images/background-gradient-bottom.svg"
+          src="/images/background-gradient-bottom.png"
           width="1446"
           height="109"
           layout="responsive"

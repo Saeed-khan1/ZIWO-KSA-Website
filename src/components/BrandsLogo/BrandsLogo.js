@@ -55,7 +55,7 @@ const BrandsLogo = () => {
       </div>
       <div className="-mt-2">
         <Image
-          src="/images/background-bottom-image.svg"
+          src="/images/background-gradient-bottom.png"
           width="1446"
           height="109"
           layout="responsive"

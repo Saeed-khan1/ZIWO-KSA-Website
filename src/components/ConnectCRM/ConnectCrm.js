@@ -44,7 +44,7 @@ const ConnectCrm = () => {
     <>
       <div className="-mb-2">
         <Image
-          src="/images/background-gradient-top.svg"
+          src="/images/background-gradient-top.png"
           width="1446"
           height="109"
           layout="responsive"
@@ -89,7 +89,7 @@ const ConnectCrm = () => {
       </div>
       <div className="-mt-2">
         <Image
-          src="/images/background-gradient-bottom.svg"
+          src="/images/background-gradient-bottom.png"
           width="1446"
           height="109"
           layout="responsive"
