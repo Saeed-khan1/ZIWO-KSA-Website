@@ -43,20 +43,23 @@ const Header = () => {
   return (
     <>
       <section className={verticalFeatureClass}>
-        <div className="w-full lg:w-4/12">
+        <div className="w-full lg:w-5/12">
           {/* *********** HEADER TITLE ************************ */}
           <h1
             className={`${titleFontFamily} font-bold text-8xl md:text-9xl`}
             dir={textDirection}
           >
-            {text("Header:header-title_simply")}{" "}
+            {text("Header:header-title_simply")}
             <span className="text-gradient">
               {text("Header:header-title_talk")}
             </span>
+            {isEnglishLocale && <br />}
             <span>
               {!isEnglishLocale && text("Header:header-title-text-for-arabic")}
             </span>
-            {text("Header:header-title_clients")}
+            <span className="block lg:inline-block">
+              {text("Header:header-title_clients")}
+            </span>
           </h1>
           {/* *********** HEADER PARAGRAPH ************************ */}
           <p
@@ -84,7 +87,7 @@ const Header = () => {
             {text("Header:header-credit-card")}
           </p>
         </div>
-        <div className="w-full lg:w-8/12">
+        <div className="w-full lg:w-7/12">
           <div className=" hidden lg:flex justify-end">
             {/* *********** HEADER IMAGE ************************ */}
             <Image
