@@ -8,6 +8,8 @@ steps:
   - name: build ksa
     role_arn_to_assume: 'arn:aws:iam::164490501968:role/prod/gulf/ziwo/k8s_core/drone-runner'
     image: plugins/kaniko-ecr
+    environment:
+      NEXT_PUBLIC_GOOGLE_ANALYTICS: UA-131299981-1
     resources:
       limits:
         cpu: 2000
