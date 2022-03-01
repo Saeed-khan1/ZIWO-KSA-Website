@@ -18,7 +18,7 @@ const ProfitableSolution = () => {
   const isArabicLanguage = locale === "ar" && true;
 
   const tryForFreeButtonLink = isArabicLanguage
-    ? "https://ziwo.typeform.com/free-trial-ar"
+    ? "https://demo.ziwo.io/arabic"
     : "https://demo.ziwo.io/freetrial";
 
   const contactButtonLink = isArabicLanguage

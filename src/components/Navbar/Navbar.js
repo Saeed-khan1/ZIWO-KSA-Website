@@ -20,7 +20,7 @@ const Navbar = () => {
   const isArabicLanguage = router.locale === "ar" && true;
 
   const buttonLink = isArabicLanguage
-    ? "https://ziwo.typeform.com/free-trial-ar"
+    ? "https://demo.ziwo.io/arabic"
     : "https://demo.ziwo.io/freetrial";
 
   const handleMobileMenuToggle = () => {

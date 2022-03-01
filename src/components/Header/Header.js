@@ -17,7 +17,7 @@ const Header = () => {
   const isEnglishLocale = router.locale == "en-US" && true;
 
   const buttonLink = !isEnglishLocale
-    ? "https://ziwo.typeform.com/free-trial-ar"
+    ? "https://demo.ziwo.io/arabic"
     : "https://demo.ziwo.io/freetrial";
 
   const textDirection = isEnglishLocale ? "ltr" : "rtl";
